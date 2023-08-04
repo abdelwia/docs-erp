@@ -6,8 +6,13 @@ import { defineConfig } from 'vitepress'
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
   title: "Magma OnePay API V1",
+  
   // description: "Api documentation",
   themeConfig: {
+
+
+
+    
     // https://vitepress.dev/reference/default-theme-config
     // nav: [
     //   { text: 'Home', link: '/' },

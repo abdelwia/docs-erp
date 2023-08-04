@@ -8,7 +8,7 @@ BASE_URL/v1/payment/init
 
 # Initiate Payment
 
-This guide will help you initiate a payment to any operator that our API supports.
+This guide will help you initiate a payment to any operator that Magma OnePay API V1 supports.
 
 
 ## Corridors

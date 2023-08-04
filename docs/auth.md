@@ -2,10 +2,10 @@
 
 # Magma OnePay API V1
 
-Our API allows your app to interact with our payment/transfer platform. This guide will help you set up and manage your API keys, understand different operating modes, and use the keys properly for secure transactions.
+Magma OnePay API V1 allows your app to interact with our payment/transfer platform. This guide will help you set up and manage your API keys, understand different operating modes, and use the keys properly for secure transactions.
 
 ## Understanding API Keys
-API keys are the "passwords" that let your application access our API. Keep these keys private to maintain the security of your transactions. You can manage these keys from your Dashboard. Note that sharing these keys in public places like GitHub or in client-side code is not recommended due to security risks.
+API keys are the "passwords" that let your application access Magma OnePay API V1. Keep these keys private to maintain the security of your transactions. You can manage these keys from your Dashboard. Note that sharing these keys in public places like GitHub or in client-side code is not recommended due to security risks.
 
 ## Getting API Keys
 You can find your API keys by logging into your account and going to the Dashboard. If you're having trouble accessing them, reach out to the owner of your account. They may need to grant you additional permissions.
@@ -20,7 +20,7 @@ There are four API keys that we provides to you :
 
 
 ## Modes of Operation
-Our API operates in two modes: test mode and live mode.
+Magma OnePay API V1 operates in two modes: test mode and live mode.
 
 * *Test mode:* Use this mode when you're still developing your app. It simulates API interactions but doesn't process real payments.
 * *Live mode:* Use this mode when your app is ready to process real transactions and accept actual payments.
