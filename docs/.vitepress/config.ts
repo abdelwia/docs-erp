@@ -75,14 +75,14 @@ export default defineConfig({
         {
   
           items: [
-            { text: 'Introduction', link: '/en/' },
+            { text: 'Introduction', link: '/' },
   
           ]
         },
         {
   
           items: [
-            { text: 'Auth', link: '/en/auth' },
+            { text: 'Auth', link: '/auth' },
   
           ]
         },
@@ -90,10 +90,10 @@ export default defineConfig({
           text: 'Payment',
           collapsed: true,
           items: [
-            { text: 'GET: Payment methods', link: '/en/payment/get-payment-methods' },
-            { text: 'POST: Payment initialization', link: '/en/payment/post-payment-initialization' },
-            { text: 'POST: Payment process', link: '/en/payment/post-payment-process' },
-            { text: 'GET: Payment status', link: '/en/payment/get-payment-status' },
+            { text: 'GET: Payment methods', link: '/payment/get-payment-methods' },
+            { text: 'POST: Payment initialization', link: '/payment/post-payment-initialization' },
+            { text: 'POST: Payment process', link: '/payment/post-payment-process' },
+            { text: 'GET: Payment status', link: '/payment/get-payment-status' },
   
           ]
         },
@@ -101,16 +101,16 @@ export default defineConfig({
           text: 'Payout Services',
           collapsed: true,
           items: [
-            { text: 'Payout Services', link: '/en/payout/' },
-            { text: 'GET: Available methods', link: '/en/payout/get-available-methods' },
-            { text: 'POST: Execute transfer', link: '/en/payout/post-execute-transfer' },
-            { text: 'GET: Transfer status', link: '/en/payout/get-transfer-status' },
+            { text: 'Payout Services', link: '/payout/' },
+            { text: 'GET: Available methods', link: '/payout/get-available-methods' },
+            { text: 'POST: Execute transfer', link: '/payout/post-execute-transfer' },
+            { text: 'GET: Transfer status', link: '/payout/get-transfer-status' },
           ]
         },
         {
   
           items: [
-            { text: 'Webhook', link: '/en/webhook' },
+            { text: 'Webhook', link: '/webhook' },
   
           ]
         },
