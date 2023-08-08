@@ -6,12 +6,24 @@ import { defineConfig } from 'vitepress'
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
   title: "Magma OnePay API V1",
-  
-  // description: "Api documentation",
+  description: "API Documentation for Magma OnePay",
 
   lang:'en',
 
   themeConfig: {
+    nav: [
+    
+    ],
+
+    footer: {
+      copyright: 'Copyright © 2023 Magmasend. All rights reserved.'
+    },
+    search: {
+      provider: 'local',
+
+    },
+    logo: '/logo.png',
+    siteTitle: "Magma OnePay API V1",
 
     sidebar: [
       {
@@ -58,9 +70,9 @@ export default defineConfig({
       },
     ],
 
-    socialLinks: [
-      { icon: 'github', link: 'https://github.com/vuejs/vitepress' }
-    ]
+    // socialLinks: [
+    //   { icon: 'github', link: 'https://github.com/vuejs/vitepress' }
+    // ]
   },
 
 
@@ -68,9 +80,16 @@ export default defineConfig({
   root:{
     label: 'English',
     lang: 'en',
+    title: 'Magma OnePay API V1',
+    description: 'API Documentation for Magma OnePay',
 
     themeConfig: {
-
+      search: {
+        provider: 'local'
+      },
+      footer: {
+        copyright: 'Copyright © 2023 Magmasend. All rights reserved.'
+      },
       sidebar: [
         {
   
@@ -116,18 +135,23 @@ export default defineConfig({
         },
       ],
   
-      socialLinks: [
-        { icon: 'github', link: 'https://github.com/vuejs/vitepress' }
-      ]
+     
     },
   },
 
   fr:{
+    title: 'Magma OnePay API V1',
+    description: 'Documentation de l\'API Magma OnePay',
     label: 'Français',
     lang: 'fr',
     link: '/fr/',
     themeConfig: {
-
+      search: {
+        provider: 'local'
+      },
+      footer: {
+        copyright: 'Copyright © 2023 Magmasend. All rights reserved.'
+      },
       sidebar: [
         {
   
@@ -173,10 +197,6 @@ export default defineConfig({
           ]
         },
       ],
-  
-      socialLinks: [
-        { icon: 'github', link: 'https://github.com/vuejs/vitepress' }
-      ]
     },
   }
   }
