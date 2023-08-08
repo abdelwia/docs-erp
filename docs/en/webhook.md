@@ -7,9 +7,6 @@ The API payment webhook is a powerful tool that keeps your system updated about 
 
 The first step is to create an endpoint in your application that will receive and handle incoming webhook POST requests. This URL must be publicly accessible and should use HTTPS to ensure the security of the data being transmitted.
 
-## Step 2: Set up a webhook URL
-After setting up your endpoint and configurate it on the system. The API will send webhook notifications to your specified endpoint.
-
 
 ## Step 3: Handle the webhook payload
 
@@ -31,8 +28,6 @@ Here are some of the fields you can expect in the payload:
     * `payment_status:` The current status of the payment (e.g., 'success', 'failed').
     * `payment_status_code:` The payment processor's status code for the transaction.
     * `payment_status_message:`A message from the payment processor describing the transaction status.
-
-## Step 4: Verify the signature
 
 To ensure the incoming request genuinely originated from the API, you'll need to validate the 'X-SIGNATURE' header. Use your webhook secret key and the HMAC SHA-256 algorithm to calculate a signature and compare it with the received signature. Discard any requests where the calculated signature doesn't match the received signature.
 
