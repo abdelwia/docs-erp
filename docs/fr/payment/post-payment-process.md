@@ -128,7 +128,7 @@ curl --location 'BASE_URL/v1/payment/process' \
     "payment_method": "ORANGE_CI",
     "payment_reference": "CI.230312.1042.343DG",
     "custom_field": "{userId: 12345}",
-    "payment_status": "en attente",
+    "payment_status": "pending",
     "payment_status_code": "100",
     "payment_status_message": "EN_ATTENTE_DU_PAIEMENT_DU_CLIENT",
     "payment_processing_url": null
@@ -162,7 +162,7 @@ curl --location 'BASE_URL/v1/payment/process' \
     "payment_method": "ORANGE_CI",
     "payment_reference": "CI.230312.1042.343DG",
     "custom_field": "{userId: 12345}",
-    "payment_status": "échec",
+    "payment_status": "failed",
     "payment_status_code": "300",
     "payment_status_message": "SOLDE_INSUFFISANT",
     "payment_processing_url": null

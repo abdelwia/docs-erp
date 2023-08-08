@@ -50,7 +50,7 @@ curl --location 'BASE_URL/v1/payment/payment_token' \
 
 ```
 
-## Example Response ([Failed] [direct_type])
+## Example Response 
 
 ::: details Body  
 

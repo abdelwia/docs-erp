@@ -84,15 +84,15 @@ Voici les paramètres que vous devez inclure dans votre demande :
 | Paramètre | Type | Est obligatoire | Description | 
 | ------------- | ----------- |----------- |----------- |
 | merchant_transaction_id | chaîne | Oui | L'identifiant unique du commerçant pour la transaction | 
-| montant	 | entier | Oui | Le montant du paiement | 
-| devise	 | chaîne de devise valide | Oui | La devise dans laquelle le paiement est effectué | 
+| amount	 | entier | Oui | Le montant du paiement | 
+| currency	 | chaîne de devise valide | Oui | La devise dans laquelle le paiement est effectué | 
 | description	 | chaîne | Non | Une brève description de la transaction de paiement |
-| bénéficiaire	 | numéro de téléphone de bénéficiaire valide | Oui | Numéro de téléphone du bénéficiaire | 
-| bénéficiaire_prenom	 | chaîne | Non | Prénom du bénéficiaire | 
-| bénéficiaire_nom	 | chaîne | Non | Nom de famille du bénéficiaire | 
-| canal	 | chaîne de canal valide | Oui | Le canal utilisé pour effectuer le paiement | 
+| payee	 | numéro de téléphone de bénéficiaire valide | Oui | Numéro de téléphone du bénéficiaire | 
+| payee_first_name		 | chaîne | Non | Prénom du bénéficiaire | 
+| payee_last_name	 | chaîne | Non | Nom de famille du bénéficiaire | 
+| channel	 | chaîne de canal valide | Oui | Le canal utilisé pour effectuer le paiement | 
 | webhook_url	 | chaîne | Non | L'URL à laquelle la confirmation de paiement sera envoyée | 
-| champ_personnalisé	 | chaîne | Non | Un champ personnalisé facultatif pour des informations supplémentaires | 
+| custom_field	 | chaîne | Non | Un champ personnalisé facultatif pour des informations supplémentaires | 
 
 
 Veuillez noter que vous pouvez forcer l'utilisation d'une méthode de paiement en ajoutant "payment_method" avec une méthode valide

@@ -1,9 +1,9 @@
 # Magma OnePay API V1
 
-L'API Magma OnePay est conçue selon les principes REST. Elle utilise des URL centrées sur les ressources faciles à prédire et elle accepte et renvoie des informations au format JSON. De plus, elle applique les règles standard HTTP pour les codes de réponse, l'authentification et les verbes.
+Magma OnePay API is designed following REST principles. It uses easy-to-predict, resource-centric URLs, and it both accepts and gives back information in JSON format. Plus, it applies standard HTTP rules for response codes, authentication, and verbs.
 
-Nous vous fournirons séparément la valeur de BASEURL.
+We will separately provide you with the BASEURL value.
 
-Vous pouvez utiliser l'API dans un environnement de test sécurisé qui n'aura pas d'impact sur vos données en direct ni de connexion avec des réseaux bancaires ou de mobile money. Le type de clé API que vous utilisez pour vérifier la requête déterminera s'il s'agit du mode en direct ou du mode de test.
+You can use the API in a safe testing environment, which won't touch your live data or connect with any banking or mobile money networks. The type of API key you use for verifying the request will decide if it's in live or test mode.
 
-Veuillez vous rappeler que toutes les requêtes API doivent être envoyées via HTTPS. Les tentatives effectuées via HTTP non sécurisé ne fonctionneront pas. De plus, les requêtes API effectuées sans authentification échoueront.
+Please remember, all API requests need to be sent over HTTPS. Attempts made over non-secure HTTP will not work. Also, API requests made without authentication will fail.
