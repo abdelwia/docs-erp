@@ -11,9 +11,7 @@ export default defineConfig({
   lang:'en',
 
   themeConfig: {
-    nav: [
-    
-    ],
+
 
     footer: {
       copyright: 'Copyright © 2023 Magmasend. All rights reserved.'
@@ -163,30 +161,30 @@ export default defineConfig({
         {
   
           items: [
-            { text: 'Auth', link: '/fr/auth' },
+            { text: 'Authentification', link: '/fr/auth' },
   
           ]
         },
         {
-          text: 'Payment',
+          text: 'Paiement',
           collapsed: true,
         
           items: [
-            { text: 'GET: Payment methods', link: '/fr/payment/get-payment-methods' },
-            { text: 'POST: Payment initialization', link: '/fr/payment/post-payment-initialization' },
-            { text: 'POST: Payment process', link: '/fr/payment/post-payment-process' },
-            { text: 'GET: Payment status', link: '/fr/payment/get-payment-status' },
+            { text: 'GET: Méthodes de paiement', link: '/fr/payment/get-payment-methods' },
+            { text: 'POST: Initialisation du paiement', link: '/fr/payment/post-payment-initialization' },
+            { text: 'POST: Traitement du paiement', link: '/fr/payment/post-payment-process' },
+            { text: 'GET: Statut du paiement', link: '/fr/payment/get-payment-status' },
   
           ]
         },
         {
-          text: 'Payout Services',
+          text: 'Services de Paiement',
           collapsed: true,
           items: [
-            { text: 'Payout Services', link: '/fr/payout/' },
-            { text: 'GET: Available methods', link: '/fr/payout/get-available-methods' },
-            { text: 'POST: Execute transfer', link: '/fr/payout/post-execute-transfer' },
-            { text: 'GET: Transfer status', link: '/fr/payout/get-transfer-status' },
+            { text: 'Services de Paiement', link: '/fr/payout/' },
+            { text: 'GET: Méthodes disponibles', link: '/fr/payout/get-available-methods' },
+            { text: 'POST: Effectuer un transfert', link: '/fr/payout/post-execute-transfer' },
+            { text: 'GET: Statut du transfert', link: '/fr/payout/get-transfer-status' },
           ]
         },
         {

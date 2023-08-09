@@ -1,4 +1,4 @@
-### <span style="color:green">GET</span> État du paiement
+### <span style="color:green">GET</span> Statut du paiement
 
 ````
 BASE_URL/v1/payment/:payment_token

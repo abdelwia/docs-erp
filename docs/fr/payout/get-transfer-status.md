@@ -1,4 +1,4 @@
-### <span style="color:green">GET</span>  État du Transfert
+### <span style="color:green">GET</span>  Statut du Transfert
 
 ````
 BASE_URL/v1/payout/transfer/:transfer_token
