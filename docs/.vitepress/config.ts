@@ -2,69 +2,169 @@ import { defineConfig } from "vitepress";
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
-  title: "Magma OnePay API V1",
-  description: "API Documentation for Magma OnePay",
+  title: "WiASSUR ERP V2",
+  description: "Documentation pour l'ERP WiASSUR ERP V2",
 
-  lang: "en",
+  lang: "fr",
 
   themeConfig: {
     footer: {
-      copyright: "Copyright © 2023 Magmasend. All rights reserved.",
+      copyright: "Copyright © 2023 WiASSUR. All rights reserved.",
     },
     search: {
       provider: "local",
     },
     logo: "/logo.png",
-    siteTitle: "Magma OnePay API V1",
+    siteTitle: "WiASSUR ERP V2",
 
     sidebar: [
+      // {
+      //   text: "Accueil",
+      //   link: "/",
+      // },
+      // {
+      // text: "Authentification", link: "/auth"
+      // },
       {
-        text: "Introduction",
-        link: "/",
-      },
-      {
-        text: "Auth",
-        link: "/auth",
-      },
-
-
-      {
-        text: "Payment",
+        text: "Master",
         collapsed: true,
         items: [
           {
-            text: "GET: Payment methods",
-            link: "/payment/get-payment-methods",
+            text: "Api Controller",
+            collapsed: true,
+            items: [
+              {
+                text: "GET - Types de données",
+                link: "/master/api-controller",
+              },
+              {
+                text: "GET -  Durées",
+                link: "/master/durations",
+              },
+            ],
           },
           {
-            text: "POST: Payment initialization",
-            link: "/payment/post-payment-initialization",
+            text: "Api Controller",
+            link: "/master/api-controller",
           },
           {
-            text: "POST: Payment process",
-            link: "/payment/post-payment-process",
+            text: "Durées",
+            link: "/master/duree",
           },
-          { text: "GET: Payment status", link: "/payment/get-payment-status" },
+          { text: "Platformes", 
+            link: "/master/platforme" 
+          },
+          { text: "Assureurs", 
+            link: "/master/assureur" 
+          },
+          { text: "Catégories de pack", 
+            link: "/master/category-pack" 
+          },
+          { text: "Langues", 
+            link: "/master/langue" 
+          },
+          { text: "Paramettre", 
+            link: "/master/param" 
+          },
         ],
       },
       {
-        text: "Payout Services",
+        text: "Production",
         collapsed: true,
         items: [
-          { text: "Payout Services", link: "/payout/" },
-          {
-            text: "GET: Available methods",
-            link: "/payout/get-available-methods",
+          { 
+            text: "Cotations", 
+            link: "/production/cotation" 
           },
           {
-            text: "POST: Execute transfer",
-            link: "/payout/post-execute-transfer",
+            text: "Comparateur",
+            link: "/production/comparateur",
           },
-          { text: "GET: Transfer status", link: "/payout/get-transfer-status" },
+          {
+            text: "Paiements",
+            link: "/production/paiement",
+          },
+          { 
+            text: "Livraisons", 
+            link: "/production/livraison" 
+          },
+          { 
+            text: "Contrats", 
+            link: "/production/contrat" 
+          },
+          { 
+            text: "Avenants", 
+            link: "/production/avenant" 
+          },
+          { 
+            text: "Clients", 
+            link: "/production/client" 
+          },
+          { 
+            text: "Livraison", 
+            link: "/production/livraison" 
+          },
+          { 
+            text: "Apporteurs", 
+            link: "/production/apporteur" 
+          },
+          { 
+            text: "Parrainages", 
+            link: "/production/parrainage" 
+          },
+          { 
+            text: "Methode de paiements", 
+            link: "/production/methode-paiement" 
+          },
+          { 
+            text: "Etats", 
+            link: "/production/etat" 
+          },
+          { 
+            text: "Importer", 
+            link: "/production/import" 
+          },
+          { 
+            text: "Statistic", 
+            link: "/production/statitic" 
+          },
         ],
       },
       {
-        text: "Webhook", link: "/webhook" 
+        text: "Communication",
+        collapsed: true,
+        items: [
+          { 
+            text: "Campagne automatique", 
+            link: "/communication/campagne-auto" 
+          },
+          {
+            text: "Comparateur",
+            link: "/communication/campagne-manuel",
+          },
+          {
+            text: "Users",
+            link: "/communication/user",
+          }
+        ],
+      },
+      {
+        text: "Administration",
+        collapsed: true,
+        items: [
+          { 
+            text: "Utilisateurs", 
+            link: "/administration/user" 
+          },
+          {
+            text: "Tenants",
+            link: "/administration/tenant",
+          },
+          {
+            text: "Roles",
+            link: "/administration/role",
+          }
+        ],
       },
     ],
 
@@ -75,144 +175,353 @@ export default defineConfig({
 
   locales: {
     root: {
-      label: "English",
-      lang: "en",
-      title: "Magma OnePay API V1",
-      description: "API Documentation for Magma OnePay",
-
+      title: "WiASSUR ERP V2",
+      description: "Documentation pour l'ERP WiASSUR ERP V2",
+      label: "Français",
+      lang: "fr",
       themeConfig: {
         search: {
           provider: "local",
         },
         footer: {
-          copyright: "Copyright © 2023 Magmasend. All rights reserved.",
+          copyright: "Copyright © 2023 WiASSUR. All rights reserved.",
         },
         sidebar: [
-         {
-        text: "Introduction",
-        link: "/",
-      },
-      {
-        text: "Auth",
-        link: "/auth",
-      },
 
+          // {
+          //    text: "Accueil", 
+          //    link: "/" ,
+          // },
+          // {
+          // text: "Authentification", link: "/auth"
+          // },
           {
-            text: "Payment",
+            text: "API Master",
             collapsed: true,
             items: [
               {
-                text: "GET: Payment methods",
-                link: "/payment/get-payment-methods",
+                text: "Api Controller",
+                collapsed: true,
+                items: [
+                  {
+                    text: "GET - Types de données",
+                    link: "/master/api-controller",
+                  },
+                  {
+                    text: "GET -  Durées",
+                    link: "/master/durations",
+                  },
+                ],
               },
               {
-                text: "POST: Payment initialization",
-                link: "/payment/post-payment-initialization",
+                text: "Durées",
+                link: "/master/duree",
               },
-              {
-                text: "POST: Payment process",
-                link: "/payment/post-payment-process",
+              { text: "Platformes", 
+                link: "/master/platforme" 
               },
-              {
-                text: "GET: Payment status",
-                link: "/payment/get-payment-status",
+              { text: "Assureurs", 
+                link: "/master/assureur" 
+              },
+              { text: "Catégories de pack", 
+                link: "/master/category-pack" 
+              },
+              { text: "Langues", 
+                link: "/master/langue" 
+              },
+              { text: "Paramettre", 
+                link: "/master/param" 
               },
             ],
           },
           {
-            text: "Payout Services",
+            text: "Production",
             collapsed: true,
             items: [
-              { text: "Payout Services", link: "/payout/" },
-              {
-                text: "GET: Available methods",
-                link: "/payout/get-available-methods",
+              { 
+                text: "Cotations", 
+                link: "/production/cotation" 
               },
               {
-                text: "POST: Execute transfer",
-                link: "/payout/post-execute-transfer",
+                text: "Comparateur",
+                link: "/production/comparateur",
               },
               {
-                text: "GET: Transfer status",
-                link: "/payout/get-transfer-status",
+                text: "Paiements",
+                link: "/production/paiement",
+              },
+              { 
+                text: "Livraisons", 
+                link: "/production/livraison" 
+              },
+              { 
+                text: "Contrats", 
+                link: "/production/contrat" 
+              },
+              { 
+                text: "Avenants", 
+                link: "/production/avenant" 
+              },
+              { 
+                text: "Clients", 
+                link: "/production/client" 
+              },
+              { 
+                text: "Livraison", 
+                link: "/production/livraison" 
+              },
+              { 
+                text: "Apporteurs", 
+                link: "/production/apporteur" 
+              },
+              { 
+                text: "Parrainages", 
+                link: "/production/parrainage" 
+              },
+              { 
+                text: "Methode de paiements", 
+                link: "/production/methode-paiement" 
+              },
+              { 
+                text: "Etats", 
+                link: "/production/etat" 
+              },
+              { 
+                text: "Importer", 
+                link: "/production/import" 
+              },
+              { 
+                text: "Statistic", 
+                link: "/production/statitic" 
               },
             ],
           },
           {
-           text: "Webhook", link: "/webhook" 
+            text: "Communication",
+            collapsed: true,
+            items: [
+              { 
+                text: "Campagne automatique", 
+                link: "/communication/campagne-auto" 
+              },
+              {
+                text: "Comparateur",
+                link: "/communication/campagne-manuel",
+              },
+              {
+                text: "Users",
+                link: "/communication/user",
+              }
+            ],
+          },
+          {
+            text: "Administration",
+            collapsed: true,
+            items: [
+              { 
+                text: "Utilisateurs", 
+                link: "/administration/user" 
+              },
+              {
+                text: "Tenants",
+                link: "/administration/tenant",
+              },
+              {
+                text: "Roles",
+                link: "/administration/role",
+              }
+            ],
           },
         ],
       },
     },
 
-    fr: {
-      title: "Magma OnePay API V1",
-      description: "Documentation de l'API Magma OnePay",
-      label: "Français",
-      lang: "fr",
-      link: "/fr/",
+    en: {
+      label: "English",
+      lang: "en",
+      link: "/en/",
+      title: "WiASSUR ERP V2",
+      description: "Documentation for the WiASSUR ERP V2",
+
       themeConfig: {
         search: {
           provider: "local",
         },
         footer: {
-          copyright: "Copyright © 2023 Magmasend. All rights reserved.",
+          copyright: "Copyright © 2023 WiASSUR. All rights reserved.",
         },
         sidebar: [
-
-    
-
-          {
-             text: "Introduction", link: "/fr/" ,
-          },
-          {
-          text: "Authentification", link: "/fr/auth"
-          },
-          {
-            text: "Paiement",
-            collapsed: true,
-
-            items: [
-              {
-                text: "GET: Méthodes de paiement",
-                link: "/fr/payment/get-payment-methods",
-              },
-              {
-                text: "POST: Initialisation du paiement",
-                link: "/fr/payment/post-payment-initialization",
-              },
-              {
-                text: "POST: Traitement du paiement",
-                link: "/fr/payment/post-payment-process",
-              },
-              {
-                text: "GET: Statut du paiement",
-                link: "/fr/payment/get-payment-status",
-              },
-            ],
-          },
-          {
-            text: "Services de Paiement",
-            collapsed: true,
-            items: [
-              { text: "Services de Paiement", link: "/fr/payout/" },
-              {
-                text: "GET: Méthodes disponibles",
-                link: "/fr/payout/get-available-methods",
-              },
-              {
-                text: "POST: Effectuer un transfert",
-                link: "/fr/payout/post-execute-transfer",
-              },
-              {
-                text: "GET: Statut du transfert",
-                link: "/fr/payout/get-transfer-status",
-              },
-            ],
-          },
-          {
-             text: "Webhook", link: "/fr/webhook" 
-          },
+        //   {
+        //     text: "Home", 
+        //     link: "/en/" ,
+        //  },
+        //  {
+        //  text: "Authentification", 
+        //  link: "/en/auth"
+        //  },
+         {
+           text: "Master",
+           collapsed: true,
+           items: [
+            //  {
+            //    text: "Branche Configuration",
+            //    collapsed: true,
+            //    items: [
+            //      {
+            //        text: "Categorie",
+            //        link: "/en/configuration/branche/category",
+            //      },
+            //      {
+            //        text: "Branche",
+            //        collapsed: true,
+            //        items: [
+            //          {
+            //            text: "Formulaires",
+            //            link: "/en/configuration/branche/branchItems/formulaire",
+            //          },
+            //          {
+            //            text: "Objets",
+            //            link: "/en/configuration/branche/branchItems/objet",
+            //          },
+            //          {
+            //            text: "Garanties",
+            //            link: "/en/configuration/branche/branchItems/garantie",
+            //          },
+            //          {
+            //            text: "Moteur de calcul",
+            //            link: "/en/configuration/branche/branchItems/moteur-calcul",
+            //          },
+            //          {
+            //            text: "Détails de facture",
+            //            link: "/en/configuration/branche/branchItems/detail-facture",
+            //          },
+            //        ],
+            //      }
+            //    ],
+            //  },
+            {
+              text: "Api Controller",
+              link: "/en/master/api-controller",
+            },
+             {
+               text: "Durées",
+               link: "/en/master/duree",
+             },
+             { text: "Platformes", 
+               link: "/en/master/platforme" 
+             },
+             { text: "Assureurs", 
+               link: "/en/master/assureur" 
+             },
+             { text: "Catégories de pack", 
+               link: "/en/master/category-pack" 
+             },
+             { text: "Langues", 
+               link: "/en/master/langue" 
+             },
+             { text: "Paramettre", 
+               link: "/en/master/param" 
+             },
+           ],
+         },
+         {
+           text: "Production",
+           collapsed: true,
+           items: [
+             { 
+               text: "Cotations", 
+               link: "/en/production/cotation" 
+             },
+             {
+               text: "Comparateur",
+               link: "/en/production/comparateur",
+             },
+             {
+               text: "Paiements",
+               link: "/en/production/paiement",
+             },
+             { 
+               text: "Livraisons", 
+               link: "/en/production/livraison" 
+             },
+             { 
+               text: "Contrats", 
+               link: "/en/production/contrat" 
+             },
+             { 
+               text: "Avenants", 
+               link: "/en/production/avenant" 
+             },
+             { 
+               text: "Clients", 
+               link: "/en/production/client" 
+             },
+             { 
+               text: "Livraison", 
+               link: "/en/production/livraison" 
+             },
+             { 
+               text: "Apporteurs", 
+               link: "/en/production/apporteur" 
+             },
+             { 
+               text: "Parrainages", 
+               link: "/en/production/parrainage" 
+             },
+             { 
+               text: "Methode de paiements", 
+               link: "/en/production/methode-paiement" 
+             },
+             { 
+               text: "Etats", 
+               link: "/en/production/etat" 
+             },
+             { 
+               text: "Importer", 
+               link: "/en/production/import" 
+             },
+             { 
+               text: "Statistic", 
+               link: "/en/production/statitic" 
+             },
+           ],
+         },
+         {
+           text: "Communication",
+           collapsed: true,
+           items: [
+             { 
+               text: "Campagne automatique", 
+               link: "/en/communication/campagne-auto" 
+             },
+             {
+               text: "Comparateur",
+               link: "/en/communication/campagne-manuel",
+             },
+             {
+               text: "Users",
+               link: "/en/communication/user",
+             }
+           ],
+         },
+         {
+           text: "Administration",
+           collapsed: true,
+           items: [
+             { 
+               text: "Utilisateurs", 
+               link: "/en/administration/user" 
+             },
+             {
+               text: "Tenants",
+               link: "/en/administration/tenant",
+             },
+             {
+               text: "Roles",
+               link: "/en/administration/role",
+             }
+           ],
+         },
         ],
       },
     },
