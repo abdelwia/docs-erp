@@ -3,7 +3,7 @@ import { defineConfig } from "vitepress";
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
   title: "WiASSUR ERP V2",
-  description: "Documentation pour l'ERP WiASSUR ERP V2",
+  description: "Documentation des API de l'entreprise WiASSUR ",
 
   lang: "fr",
 
