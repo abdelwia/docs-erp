@@ -18,15 +18,8 @@ export default defineConfig({
     siteTitle: "WiASSUR ERP V2",
 
     sidebar: [
-      // {
-      //   text: "Accueil",
-      //   link: "/",
-      // },
-      // {
-      // text: "Authentification", link: "/auth"
-      // },
       {
-        text: "Master",
+        text: "API Master",
         collapsed: true,
         items: [
           {
@@ -42,129 +35,68 @@ export default defineConfig({
                 link: "/master/durations",
               },
             ],
-          },
+          }
+        ]
+      },
+      {
+        text: "API Core",
+        collapsed: true,
+        items: [
           {
             text: "Api Controller",
-            link: "/master/api-controller",
-          },
-          {
-            text: "Durées",
-            link: "/master/duree",
-          },
-          { text: "Platformes", 
-            link: "/master/platforme" 
-          },
-          { text: "Assureurs", 
-            link: "/master/assureur" 
-          },
-          { text: "Catégories de pack", 
-            link: "/master/category-pack" 
-          },
-          { text: "Langues", 
-            link: "/master/langue" 
-          },
-          { text: "Paramettre", 
-            link: "/master/param" 
-          },
-        ],
-      },
-      {
-        text: "Production",
-        collapsed: true,
-        items: [
-          { 
-            text: "Cotations", 
-            link: "/production/cotation" 
-          },
-          {
-            text: "Comparateur",
-            link: "/production/comparateur",
-          },
-          {
-            text: "Paiements",
-            link: "/production/paiement",
-          },
-          { 
-            text: "Livraisons", 
-            link: "/production/livraison" 
-          },
-          { 
-            text: "Contrats", 
-            link: "/production/contrat" 
-          },
-          { 
-            text: "Avenants", 
-            link: "/production/avenant" 
-          },
-          { 
-            text: "Clients", 
-            link: "/production/client" 
-          },
-          { 
-            text: "Livraison", 
-            link: "/production/livraison" 
-          },
-          { 
-            text: "Apporteurs", 
-            link: "/production/apporteur" 
-          },
-          { 
-            text: "Parrainages", 
-            link: "/production/parrainage" 
-          },
-          { 
-            text: "Methode de paiements", 
-            link: "/production/methode-paiement" 
-          },
-          { 
-            text: "Etats", 
-            link: "/production/etat" 
-          },
-          { 
-            text: "Importer", 
-            link: "/production/import" 
-          },
-          { 
-            text: "Statistic", 
-            link: "/production/statitic" 
-          },
-        ],
-      },
-      {
-        text: "Communication",
-        collapsed: true,
-        items: [
-          { 
-            text: "Campagne automatique", 
-            link: "/communication/campagne-auto" 
-          },
-          {
-            text: "Comparateur",
-            link: "/communication/campagne-manuel",
-          },
-          {
-            text: "Users",
-            link: "/communication/user",
+            collapsed: true,
+            items: [
+              {
+                text: "GET - Types de données",
+                link: "/core/api-controller",
+              },
+              {
+                text: "GET -  Durées",
+                link: "/core/durations",
+              },
+            ],
           }
-        ],
+        ]
       },
       {
-        text: "Administration",
+        text: "API Authentification",
         collapsed: true,
         items: [
-          { 
-            text: "Utilisateurs", 
-            link: "/administration/user" 
-          },
           {
-            text: "Tenants",
-            link: "/administration/tenant",
-          },
-          {
-            text: "Roles",
-            link: "/administration/role",
+            text: "Api Controller",
+            collapsed: true,
+            items: [
+              {
+                text: "GET - Types de données",
+                link: "/auth/api-controller",
+              },
+              {
+                text: "GET -  Durées",
+                link: "/auth/durations",
+              },
+            ],
           }
-        ],
+        ]
+      },
+      {
+        text: "API Form",
+        collapsed: true,
+        items: [
+          {
+            text: "Api Controller",
+            collapsed: true,
+            items: [
+              {
+                text: "GET - Types de données",
+                link: "/form/api-controller",
+              },
+              {
+                text: "GET -  Durées",
+                link: "/form/durations",
+              },
+            ],
+          }
+        ]
       },
     ],
 
@@ -187,14 +119,6 @@ export default defineConfig({
           copyright: "Copyright © 2023 WiASSUR. All rights reserved.",
         },
         sidebar: [
-
-          // {
-          //    text: "Accueil", 
-          //    link: "/" ,
-          // },
-          // {
-          // text: "Authentification", link: "/auth"
-          // },
           {
             text: "API Master",
             collapsed: true,
@@ -212,125 +136,68 @@ export default defineConfig({
                     link: "/master/durations",
                   },
                 ],
-              },
-              {
-                text: "Durées",
-                link: "/master/duree",
-              },
-              { text: "Platformes", 
-                link: "/master/platforme" 
-              },
-              { text: "Assureurs", 
-                link: "/master/assureur" 
-              },
-              { text: "Catégories de pack", 
-                link: "/master/category-pack" 
-              },
-              { text: "Langues", 
-                link: "/master/langue" 
-              },
-              { text: "Paramettre", 
-                link: "/master/param" 
-              },
-            ],
-          },
-          {
-            text: "Production",
-            collapsed: true,
-            items: [
-              { 
-                text: "Cotations", 
-                link: "/production/cotation" 
-              },
-              {
-                text: "Comparateur",
-                link: "/production/comparateur",
-              },
-              {
-                text: "Paiements",
-                link: "/production/paiement",
-              },
-              { 
-                text: "Livraisons", 
-                link: "/production/livraison" 
-              },
-              { 
-                text: "Contrats", 
-                link: "/production/contrat" 
-              },
-              { 
-                text: "Avenants", 
-                link: "/production/avenant" 
-              },
-              { 
-                text: "Clients", 
-                link: "/production/client" 
-              },
-              { 
-                text: "Livraison", 
-                link: "/production/livraison" 
-              },
-              { 
-                text: "Apporteurs", 
-                link: "/production/apporteur" 
-              },
-              { 
-                text: "Parrainages", 
-                link: "/production/parrainage" 
-              },
-              { 
-                text: "Methode de paiements", 
-                link: "/production/methode-paiement" 
-              },
-              { 
-                text: "Etats", 
-                link: "/production/etat" 
-              },
-              { 
-                text: "Importer", 
-                link: "/production/import" 
-              },
-              { 
-                text: "Statistic", 
-                link: "/production/statitic" 
-              },
-            ],
-          },
-          {
-            text: "Communication",
-            collapsed: true,
-            items: [
-              { 
-                text: "Campagne automatique", 
-                link: "/communication/campagne-auto" 
-              },
-              {
-                text: "Comparateur",
-                link: "/communication/campagne-manuel",
-              },
-              {
-                text: "Users",
-                link: "/communication/user",
               }
-            ],
+            ]
           },
           {
-            text: "Administration",
+            text: "API Core",
             collapsed: true,
             items: [
-              { 
-                text: "Utilisateurs", 
-                link: "/administration/user" 
-              },
               {
-                text: "Tenants",
-                link: "/administration/tenant",
-              },
-              {
-                text: "Roles",
-                link: "/administration/role",
+                text: "Api Controller",
+                collapsed: true,
+                items: [
+                  {
+                    text: "GET - Types de données",
+                    link: "/core/api-controller",
+                  },
+                  {
+                    text: "GET -  Durées",
+                    link: "/core/durations",
+                  },
+                ],
               }
-            ],
+            ]
+          },
+          {
+            text: "API Authentification",
+            collapsed: true,
+            items: [
+              {
+                text: "Api Controller",
+                collapsed: true,
+                items: [
+                  {
+                    text: "GET - Types de données",
+                    link: "/auth/api-controller",
+                  },
+                  {
+                    text: "GET -  Durées",
+                    link: "/auth/durations",
+                  },
+                ],
+              }
+            ]
+          },
+          {
+            text: "API Form",
+            collapsed: true,
+            items: [
+              {
+                text: "Api Controller",
+                collapsed: true,
+                items: [
+                  {
+                    text: "GET - Types de données",
+                    link: "/form/api-controller",
+                  },
+                  {
+                    text: "GET -  Durées",
+                    link: "/form/durations",
+                  },
+                ],
+              }
+            ]
           },
         ],
       },
