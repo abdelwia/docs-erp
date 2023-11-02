@@ -1,5 +1,5 @@
 
-### <span style="color:yellow">PUT</span> Sauvegarder l'état d'un contrat
+### <span style="color:yellow">PUT</span> Recuperer les avenants d'un customer
 ````
 BASE_URL/save/state/{branchSlug}
 ````

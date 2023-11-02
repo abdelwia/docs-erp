@@ -318,15 +318,15 @@ export default defineConfig({
                     link: "/core/contrats/create-contract",
                   },
                   {
-                    text: "GET - Renouveler un contrat",
+                    text: "PUT - Renouveler un contrat",
                     link: "/core/contrats/renew-contract",
                   },
                   {
-                    text: "GET -  Sauvegarder l'état d'un contrat",
+                    text: "PUT -  Sauvegarder l'état d'un contrat",
                     link: "/core/contrats/save-contract-state",
                   },
                   {
-                    text: "GET - Supprimer un contrat",
+                    text: "DELETE - Supprimer un contrat",
                     link: "/core/contrats/delete-contract",
                   },
 
@@ -337,39 +337,32 @@ export default defineConfig({
                 collapsed: true,
                 items: [
                   {
-                    text: "GET - list",
-                    link: "/core/api-controller",
+                    text: "GET - Liste des customer",
+                    link: "/core/customer/list",
                   },
                   {
-                    text: "GET -  search",
-                    link: "/core/durations",
+                    text: "GET -  Rechercher un customer",
+                    link: "/core/customer/search-customer",
                   },
                   {
-                    text: "GET - get_data",
-                    link: "/core/durations",
+                    text: "GET - Recuperer les données d'un customer",
+                    link: "/core/customer/get-customer-data",
                   },
                   {
-                    text: "GET -  load_account",
+                    text: "GET -  Recuperer les information du compte d'un customer",
+                    link: "/core/customer/load_account",
                   },
                   {
-                    text: "GET - get_account_data",
-                    link: "/core/durations",
+                    text: "GET - Recuperer les contrat du compte d'un customer",
+                    link: "/core/customer/get-contrat-customer",
                   },
                   {
-                    text: "GET - get_contrats",
-                    link: "/core/durations",
+                    text: "PUT - Modifier les information d'un consumer",
+                    link: "/core/customer/edit-customer",
                   },
                   {
-                    text: "GET - update",
-                    link: "/core/durations",
-                  },
-                  {
-                    text: "GET - get_contrats",
-                    link: "/core/durations",
-                  },
-                  {
-                    text: "GET - get_avenant",
-                    link: "/core/durations",
+                    text: "GET -  Recuperer les avenants d'un customer",
+                    link: "/core/customer/get-avenant-customer",
                   },
 
                 ],
@@ -382,12 +375,6 @@ export default defineConfig({
                     text: "GET - new",
                     link: "/core/api-controller",
                   },
-
-                  {
-                    text: "GET - new",
-                    link: "/core/api-controller",
-                  },
-
 
                 ],
               },

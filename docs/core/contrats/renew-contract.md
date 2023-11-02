@@ -1,7 +1,7 @@
 
-### <span style="color:green">GET</span>  Renouveler un contrat
+### <span style="color:YELLOW">PUT</span>  Renouveler un contrat
 ````
-BASE_URL/branch/{uuid}
+BASE_URL/contract/renew/{uuid}
 ````
 
 ## HEADERS
@@ -15,7 +15,7 @@ BASE_URL/branch/{uuid}
 ```curl
 
 
-curl --location BASE_URL/branch/{uuid}' \
+curl --location BASE_URL/branch/contract/{uuid}' \
 --header 'Authorization: Basic TOKEN'
 
 ```

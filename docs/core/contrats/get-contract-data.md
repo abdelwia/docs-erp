@@ -2,7 +2,7 @@
 ### <span style="color:green">GET</span> Recuperer les données d'un contrat
 
 ````
-BASE_URL/branch/{uuid}
+BASE_URL/contract/get/data/{uuid}
 ````
 
 ## HEADERS
@@ -16,7 +16,7 @@ BASE_URL/branch/{uuid}
 ```curl
 
 
-curl --location BASE_URL/branch/{uuid}' \
+curl --location BASE_URL/contract/get/data/{uuid}' \
 --header 'Authorization: Basic TOKEN'
 
 ```

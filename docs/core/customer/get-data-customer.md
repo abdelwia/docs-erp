@@ -1,7 +1,8 @@
 
-### <span style="color:yellow">PUT</span> Sauvegarder l'état d'un contrat
+### <span style="color:green">GET</span> Recuperer les données d'un customer
+
 ````
-BASE_URL/save/state/{branchSlug}
+BASE_URL/customer/get/data/{uuid}
 ````
 
 ## HEADERS
@@ -15,7 +16,7 @@ BASE_URL/save/state/{branchSlug}
 ```curl
 
 
-curl --location BASE_URL/branch/{uuid}' \
+curl --location BASE_URL/contract/get/data/{uuid}' \
 --header 'Authorization: Basic TOKEN'
 
 ```
@@ -66,19 +67,25 @@ curl --location BASE_URL/branch/{uuid}' \
 
  *Content-Type*    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   application/json
 
+
  *Transfer-Encoding*    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;      chunked
 
  *Connection*    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  keep-alive
  
  *Vary*    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Accept-Encoding
 
+
+
  *X-Powered-By*    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  PHP/8.2.7
+
 
  *Cache-Control*    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; no-cache, private
 
+ 
  *Date*    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  Mon, 26 Jun 2023 19:54:39 GMT
  
- *X-RateLimit-Limit*    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  600
+
+  *X-RateLimit-Limit*    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  600
 
   *X-RateLimit-Remaining*    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  599
 

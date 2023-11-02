@@ -1,7 +1,7 @@
 
-### <span style="color:green">GET</span> Supprimer un contrat
+### <span style="color:RED">DELETE</span> Supprimer un contrat
 ````
-BASE_URL/branch/{uuid}
+BASE_URL/contract/delete/{uuid}
 ````
 
 ## HEADERS
@@ -15,7 +15,7 @@ BASE_URL/branch/{uuid}
 ```curl
 
 
-curl --location BASE_URL/branch/{uuid}' \
+curl --location BASE_URL/contract/delete/{uuid}' \
 --header 'Authorization: Basic TOKEN'
 
 ```
