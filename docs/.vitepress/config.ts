@@ -136,7 +136,69 @@ export default defineConfig({
                     link: "/master/durations",
                   },
                 ],
-              }
+              },
+              {
+                text: "Type de données Controller",
+                collapsed: true,
+                items: [
+                  {
+                    text: "POST - Types de données",
+                    link: "/master/post-typedata",
+                  },
+                  {
+                    text: "GET -  Types de données",
+                    link: "/master/get-generate-typedata",
+                  },
+                ],
+              },
+              {
+                text: "Durées Controller",
+                collapsed: true,
+                items: [
+                  {
+                    text: "GET - Durées",
+                    link: "/master/get-durations",
+                  },
+                  {
+                    text: "POST - Durées",
+                    link: "/master/post-durations",
+                  },
+                ],
+              },
+              {
+                text: "Local Controller",
+                collapsed: true,
+                items: [
+                  {
+                    text: "GET - Local",
+                    link: "/master/get-local",
+                  }
+                ],
+              },
+              {
+                text: "Uploader Controller",
+                collapsed: true,
+                items: [
+                  {
+                    text: "POST - Download fichier",
+                    link: "/master/post-uploader",
+                  },
+                  {
+                    text: "POST - Dossier",
+                    link: "/master/post-folder",
+                  },
+                ],
+              },
+              {
+                text: "User Controller",
+                collapsed: true,
+                items: [
+                  {
+                    text: "GET - User",
+                    link: "/master/get-user",
+                  }
+                ],
+              },
             ]
           },
           {
@@ -184,19 +246,129 @@ export default defineConfig({
             collapsed: true,
             items: [
               {
+                text: "Admin Controller",
+                collapsed: true,
+                items: [
+                  {
+                    text: "GET - Endpoints",
+                    link: "/form/get-endpoints",
+                  },
+                ],
+              },
+              {
                 text: "Api Controller",
                 collapsed: true,
                 items: [
                   {
-                    text: "GET - Types de données",
-                    link: "/form/api-controller",
+                    text: "POST - Groupe de reponse",
+                    link: "/form/post-cotation",
                   },
                   {
-                    text: "GET -  Durées",
-                    link: "/form/durations",
+                    text: "GET -  Status GR",
+                    link: "/form/get-rgstatus",
+                  },
+                  {
+                    text: "GET -  Groupe de reponse",
+                    link: "/form/get-rg",
+                  },
+                  {
+                    text: "PUT - Mise à jour de devis",
+                    link: "/form/put-devis",
+                  },
+                  {
+                    text: "GET - Init cotation",
+                    link: "/form/get-cotation-init",
+                  },
+                  {
+                    text: "GET - Cotation",
+                    link: "/form/get-cotation",
+                  },
+                  {
+                    text: "PUT - Cotation",
+                    link: "/form/put-cotation",
+                  },
+                  {
+                    text: "GET - Survey",
+                    link: "/form/get-survey",
+                  },
+                  {
+                    text: "POST - Reponse",
+                    link: "/form/post-reponse",
+                  },
+                  {
+                    text: "POST - Reponse Groups",
+                    link: "/form/post-reponse-groups",
+                  },
+                  {
+                    text: "PUT - Alias",
+                    link: "/form/put-alias",
+                  },
+                  {
+                    text: "PUT - Secure Reponse Groups",
+                    link: "/form/put-secure-reponse-groups",
+                  },
+                  {
+                    text: "PUT - Cotation Step",
+                    link: "/form/put-cotation-step",
+                  },
+                  {
+                    text: "POST - Sub Reponse Groups",
+                    link: "/form/post-sub-reponse-groups",
+                  },
+                  {
+                    text: "POST - Sub Reponse Groups avec Id",
+                    link: "/form/post-sub-reponse-groups-id",
+                  },
+                  {
+                    text: "DELETE - Sub Reponse Groups avec Id",
+                    link: "/form/delete-sub-reponse-groups-id",
+                  },
+                  {
+                    text: "PUT - Cotation basculé vers comparé",
+                    link: "/form/put-cotation-compare",
+                  },
+                  {
+                    text: "POST - Devis",
+                    link: "/form/post-devis",
+                  },
+                  {
+                    text: "PUT - Devis Check",
+                    link: "/form/put-devis-update",
+                  },
+                  {
+                    text: "POST - Devis contrat externe",
+                    link: "/form/post-devis-contrat-externe",
+                  },
+                  {
+                    text: "GET - Devis",
+                    link: "/form/get-devis-id",
+                  },
+                  {
+                    text: "GET - Devis PDF",
+                    link: "/form/get-devis-pdf",
+                  },
+                  {
+                    text: "PUT - Devis Attente Paiement",
+                    link: "/form/put-devis-attente-paiement",
+                  },
+                  {
+                    text: "GET - Devis Status",
+                    link: "/form/get-devis-status",
+                  },
+                  {
+                    text: "GET - Devis Files",
+                    link: "/form/get-devis-files",
+                  },
+                  {
+                    text: "PUT - Devis Signature",
+                    link: "/form/put-devis-signature",
+                  },
+                  {
+                    text: "GET - Devis download PDF",
+                    link: "/form/get-devis-download-pdf",
                   },
                 ],
-              }
+              },
             ]
           },
         ],
