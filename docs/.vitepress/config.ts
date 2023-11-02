@@ -128,7 +128,7 @@ export default defineConfig({
             collapsed: true,
             items: [
               {
-                text: "Api Controller",
+                text: "Api",
                 collapsed: true,
                 items: [
                   {
@@ -142,7 +142,7 @@ export default defineConfig({
                 ],
               },
               {
-                text: "Type de données Controller",
+                text: "Type de données",
                 collapsed: true,
                 items: [
                   {
@@ -156,7 +156,7 @@ export default defineConfig({
                 ],
               },
               {
-                text: "Durées Controller",
+                text: "Durées",
                 collapsed: true,
                 items: [
                   {
@@ -170,7 +170,7 @@ export default defineConfig({
                 ],
               },
               {
-                text: "Local Controller",
+                text: "Local",
                 collapsed: true,
                 items: [
                   {
@@ -180,7 +180,7 @@ export default defineConfig({
                 ],
               },
               {
-                text: "Uploader Controller",
+                text: "Uploader",
                 collapsed: true,
                 items: [
                   {
@@ -194,7 +194,7 @@ export default defineConfig({
                 ],
               },
               {
-                text: "User Controller",
+                text: "User",
                 collapsed: true,
                 items: [
                   {
@@ -1131,7 +1131,7 @@ export default defineConfig({
             collapsed: true,
             items: [
               {
-                text: "Api Controller",
+                text: "Api",
                 collapsed: true,
                 items: [
                   {
@@ -1151,126 +1151,256 @@ export default defineConfig({
             collapsed: true,
             items: [
               {
-                text: "Admin Controller",
+                text: "Admin",
                 collapsed: true,
                 items: [
                   {
                     text: "GET - Endpoints",
-                    link: "/form/get-endpoints",
+                    link: "/form/admin/get-endpoints",
                   },
                 ],
               },
               {
-                text: "Api Controller",
+                text: "Api",
                 collapsed: true,
                 items: [
                   {
                     text: "POST - Groupe de reponse",
-                    link: "/form/post-cotation",
+                    link: "/form/api/post-cotation",
                   },
                   {
                     text: "GET -  Status GR",
-                    link: "/form/get-rgstatus",
+                    link: "/form/api/get-rgstatus",
                   },
                   {
                     text: "GET -  Groupe de reponse",
-                    link: "/form/get-rg",
+                    link: "/form/api/get-rg",
                   },
                   {
                     text: "PUT - Mise à jour de devis",
-                    link: "/form/put-devis",
+                    link: "/form/api/put-devis",
                   },
                   {
                     text: "GET - Init cotation",
-                    link: "/form/get-cotation-init",
+                    link: "/form/api/get-cotation-init",
                   },
                   {
                     text: "GET - Cotation",
-                    link: "/form/get-cotation",
+                    link: "/form/api/get-cotation",
                   },
                   {
                     text: "PUT - Cotation",
-                    link: "/form/put-cotation",
+                    link: "/form/api/put-cotation",
                   },
                   {
                     text: "GET - Survey",
-                    link: "/form/get-survey",
+                    link: "/form/api/get-survey",
                   },
                   {
                     text: "POST - Reponse",
-                    link: "/form/post-reponse",
+                    link: "/form/api/post-reponse",
                   },
                   {
                     text: "POST - Reponse Groups",
-                    link: "/form/post-reponse-groups",
+                    link: "/form/api/post-reponse-groups",
                   },
                   {
                     text: "PUT - Alias",
-                    link: "/form/put-alias",
+                    link: "/form/api/put-alias",
                   },
                   {
                     text: "PUT - Secure Reponse Groups",
-                    link: "/form/put-secure-reponse-groups",
+                    link: "/form/api/put-secure-reponse-groups",
                   },
                   {
                     text: "PUT - Cotation Step",
-                    link: "/form/put-cotation-step",
+                    link: "/form/api/put-cotation-step",
                   },
                   {
                     text: "POST - Sub Reponse Groups",
-                    link: "/form/post-sub-reponse-groups",
+                    link: "/form/api/post-sub-reponse-groups",
                   },
                   {
                     text: "POST - Sub Reponse Groups avec Id",
-                    link: "/form/post-sub-reponse-groups-id",
+                    link: "/form/api/post-sub-reponse-groups-id",
                   },
                   {
                     text: "DELETE - Sub Reponse Groups avec Id",
-                    link: "/form/delete-sub-reponse-groups-id",
+                    link: "/form/api/delete-sub-reponse-groups-id",
                   },
                   {
                     text: "PUT - Cotation basculé vers comparé",
-                    link: "/form/put-cotation-compare",
+                    link: "/form/api/put-cotation-compare",
                   },
                   {
                     text: "POST - Devis",
-                    link: "/form/post-devis",
+                    link: "/form/api/post-devis",
                   },
                   {
                     text: "PUT - Devis Check",
-                    link: "/form/put-devis-update",
+                    link: "/form/api/put-devis-update",
                   },
                   {
                     text: "POST - Devis contrat externe",
-                    link: "/form/post-devis-contrat-externe",
+                    link: "/form/api/post-devis-contrat-externe",
                   },
                   {
                     text: "GET - Devis",
-                    link: "/form/get-devis-id",
+                    link: "/form/api/get-devis-id",
                   },
                   {
                     text: "GET - Devis PDF",
-                    link: "/form/get-devis-pdf",
+                    link: "/form/api/get-devis-pdf",
                   },
                   {
                     text: "PUT - Devis Attente Paiement",
-                    link: "/form/put-devis-attente-paiement",
+                    link: "/form/api/put-devis-attente-paiement",
                   },
                   {
                     text: "GET - Devis Status",
-                    link: "/form/get-devis-status",
+                    link: "/form/api/get-devis-status",
                   },
                   {
                     text: "GET - Devis Files",
-                    link: "/form/get-devis-files",
+                    link: "/form/api/get-devis-files",
                   },
                   {
                     text: "PUT - Devis Signature",
-                    link: "/form/put-devis-signature",
+                    link: "/form/api/put-devis-signature",
                   },
                   {
                     text: "GET - Devis download PDF",
-                    link: "/form/get-devis-download-pdf",
+                    link: "/form/api/get-devis-download-pdf",
+                  },
+                  {
+                    text: "PUT - Livraison",
+                    link: "/form/api/put-livraison",
+                  },
+                  {
+                    text: "GET - Devis Online",
+                    link: "/form/api/get-devis-online",
+                  },
+                  {
+                    text: "GET - PDF",
+                    link: "/form/api/get-pdf",
+                  },
+                ],
+              },
+              {
+                text: "Data",
+                collapsed: true,
+                items: [
+                  {
+                    text: "GET - Groupe de reponse",
+                    link: "/form/data/get-response-groupe",
+                  },
+                ],
+              },
+              {
+                text: "Data Partner",
+                collapsed: true,
+                items: [
+                  {
+                    text: "GET - Groupe de reponse Partner",
+                    link: "/form/data-partner/get-response-groupe",
+                  },
+                ],
+              },
+              {
+                text: "Data Type",
+                collapsed: true,
+                items: [
+                  {
+                    text: "GET - Data Type",
+                    link: "/form/data-type/get-data-type",
+                  },
+                ],
+              },
+              {
+                text: "Mapping",
+                collapsed: true,
+                items: [
+                  {
+                    text: "GET - Lien",
+                    link: "/form/mapping/get-lien",
+                  },
+                ],
+              },
+              {
+                text: "Order",
+                collapsed: true,
+                items: [
+                  {
+                    text: "DELETE - Paiement",
+                    link: "/form/order/delete-paiement",
+                  },
+                  {
+                    text: "GET -  Livraison Paiement",
+                    link: "/form/order/get-paiement-livraison",
+                  },
+                  {
+                    text: "GET -  Livraison Paiement Current user",
+                    link: "/form/order/get-paiement-livraison-current-user",
+                  },
+                  {
+                    text: "GET -  Paiement",
+                    link: "/form/order/get-paiement",
+                  },
+                  {
+                    text: "PUT -  Annulation Paiement",
+                    link: "/form/order/put-revoke-paiement",
+                  },
+                  {
+                    text: "POST -  Envoi lien de Paiement",
+                    link: "/form/order/post-send-link-paiement",
+                  },
+                ],
+              },
+              {
+                text: "Plateforme",
+                collapsed: true,
+                items: [
+                  {
+                    text: "GET -  Plateforme",
+                    link: "/form/platform/get-platform",
+                  },
+                  {
+                    text: "GET -  Plateforme Formulaire",
+                    link: "/form/platform/get-platform-formulaire",
+                  },
+                  {
+                    text: "PUT -  Plateforme",
+                    link: "/form/platform/put-platform",
+                  },
+                ],
+              },
+              {
+                text: "Question",
+                collapsed: true,
+                items: [
+                  {
+                    text: "POST - Question Export",
+                    link: "/form/question/post-question-export",
+                  },
+                  {
+                    text: "GET -  Livraison Paiement",
+                    link: "/form/question/get-paiement-livraison",
+                  },
+                  {
+                    text: "GET -  Livraison Paiement Current user",
+                    link: "/form/question/get-paiement-livraison-current-user",
+                  },
+                  {
+                    text: "GET -  Paiement",
+                    link: "/form/question/get-paiement",
+                  },
+                  {
+                    text: "PUT -  Annulation Paiement",
+                    link: "/form/question/put-revoke-paiement",
+                  },
+                  {
+                    text: "POST -  Envoi lien de Paiement",
+                    link: "/form/question/post-send-link-paiement",
                   },
                 ],
               },
@@ -1280,199 +1410,5 @@ export default defineConfig({
       },
     },
 
-    // en: {
-    //   label: "English",
-    //   lang: "en",
-    //   link: "/en/",
-    //   title: "WiASSUR ERP V2",
-    //   description: "Documentation for the WiASSUR ERP V2",
-
-    //   themeConfig: {
-    //     search: {
-    //       provider: "local",
-    //     },
-    //     footer: {
-    //       copyright: "Copyright © 2023 WiASSUR. All rights reserved.",
-    //     },
-    //     sidebar: [
-    //       //   {
-    //       //     text: "Home", 
-    //       //     link: "/en/" ,
-    //       //  },
-    //       //  {
-    //       //  text: "Authentification", 
-    //       //  link: "/en/auth"
-    //       //  },
-    //       {
-    //         text: "Master",
-    //         collapsed: true,
-    //         items: [
-    //           //  {
-    //           //    text: "Branche Configuration",
-    //           //    collapsed: true,
-    //           //    items: [
-    //           //      {
-    //           //        text: "Categorie",
-    //           //        link: "/en/configuration/branche/category",
-    //           //      },
-    //           //      {
-    //           //        text: "Branche",
-    //           //        collapsed: true,
-    //           //        items: [
-    //           //          {
-    //           //            text: "Formulaires",
-    //           //            link: "/en/configuration/branche/branchItems/formulaire",
-    //           //          },
-    //           //          {
-    //           //            text: "Objets",
-    //           //            link: "/en/configuration/branche/branchItems/objet",
-    //           //          },
-    //           //          {
-    //           //            text: "Garanties",
-    //           //            link: "/en/configuration/branche/branchItems/garantie",
-    //           //          },
-    //           //          {
-    //           //            text: "Moteur de calcul",
-    //           //            link: "/en/configuration/branche/branchItems/moteur-calcul",
-    //           //          },
-    //           //          {
-    //           //            text: "Détails de facture",
-    //           //            link: "/en/configuration/branche/branchItems/detail-facture",
-    //           //          },
-    //           //        ],
-    //           //      }
-    //           //    ],
-    //           //  },
-    //           {
-    //             text: "Api Controller",
-    //             link: "/en/master/api-controller",
-    //           },
-    //           {
-    //             text: "Durées",
-    //             link: "/en/master/duree",
-    //           },
-    //           {
-    //             text: "Platformes",
-    //             link: "/en/master/platforme"
-    //           },
-    //           {
-    //             text: "Assureurs",
-    //             link: "/en/master/assureur"
-    //           },
-    //           {
-    //             text: "Catégories de pack",
-    //             link: "/en/master/category-pack"
-    //           },
-    //           {
-    //             text: "Langues",
-    //             link: "/en/master/langue"
-    //           },
-    //           {
-    //             text: "Paramettre",
-    //             link: "/en/master/param"
-    //           },
-    //         ],
-    //       },
-    //       {
-    //         text: "Production",
-    //         collapsed: true,
-    //         items: [
-    //           {
-    //             text: "Cotations",
-    //             link: "/en/production/cotation"
-    //           },
-    //           {
-    //             text: "Comparateur",
-    //             link: "/en/production/comparateur",
-    //           },
-    //           {
-    //             text: "Paiements",
-    //             link: "/en/production/paiement",
-    //           },
-    //           {
-    //             text: "Livraisons",
-    //             link: "/en/production/livraison"
-    //           },
-    //           {
-    //             text: "Contrats",
-    //             link: "/en/production/contrat"
-    //           },
-    //           {
-    //             text: "Avenants",
-    //             link: "/en/production/avenant"
-    //           },
-    //           {
-    //             text: "Clients",
-    //             link: "/en/production/client"
-    //           },
-    //           {
-    //             text: "Livraison",
-    //             link: "/en/production/livraison"
-    //           },
-    //           {
-    //             text: "Apporteurs",
-    //             link: "/en/production/apporteur"
-    //           },
-    //           {
-    //             text: "Parrainages",
-    //             link: "/en/production/parrainage"
-    //           },
-    //           {
-    //             text: "Methode de paiements",
-    //             link: "/en/production/methode-paiement"
-    //           },
-    //           {
-    //             text: "Etats",
-    //             link: "/en/production/etat"
-    //           },
-    //           {
-    //             text: "Importer",
-    //             link: "/en/production/import"
-    //           },
-    //           {
-    //             text: "Statistic",
-    //             link: "/en/production/statitic"
-    //           },
-    //         ],
-    //       },
-    //       {
-    //         text: "Communication",
-    //         collapsed: true,
-    //         items: [
-    //           {
-    //             text: "Campagne automatique",
-    //             link: "/en/communication/campagne-auto"
-    //           },
-    //           {
-    //             text: "Comparateur",
-    //             link: "/en/communication/campagne-manuel",
-    //           },
-    //           {
-    //             text: "Users",
-    //             link: "/en/communication/user",
-    //           }
-    //         ],
-    //       },
-    //       {
-    //         text: "Administration",
-    //         collapsed: true,
-    //         items: [
-    //           {
-    //             text: "Utilisateurs",
-    //             link: "/en/administration/user"
-    //           },
-    //           {
-    //             text: "Tenants",
-    //             link: "/en/administration/tenant",
-    //           },
-    //           {
-    //             text: "Roles",
-    //             link: "/en/administration/role",
-    //           }
-    //         ],
-    //       },
-    //     ],
-    //   },
-    // },
   },
 });
