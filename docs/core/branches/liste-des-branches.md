@@ -6,7 +6,7 @@ BASE_URL/branch/list
 
 ## HEADERS
 
-| Authorization | Basic TOKEN |
+| Authorization | Bearer TOKEN |
 | ------------- | ----------- |
 
 
@@ -16,7 +16,7 @@ BASE_URL/branch/list
 
 
 curl --location 'BASE_URL/branch/list' \
---header 'Authorization: Basic TOKEN'
+--header 'Authorization: Bearer TOKEN'
 
 ```
 

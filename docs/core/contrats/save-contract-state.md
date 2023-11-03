@@ -1,22 +1,22 @@
 
-### <span style="color:green">GET</span> Sauvegarder l'état d'un contrat
+### <span style="color:yellow">PUT</span> Sauvegarder l'état d'un contrat
 ````
-BASE_URL/branch/{uuid}
+BASE_URL/contract/save/state/{branchSlug}
 ````
 
 ## HEADERS
 
-| Authorization | Basic TOKEN |
+| Authorization | Bearer TOKEN |
 | ------------- | ----------- |
 
 
 ## Example Request
 
-```curl
+```txt
 
 
-curl --location BASE_URL/branch/{uuid}' \
---header 'Authorization: Basic TOKEN'
+txt --location BASE_URL/contract/save/state/{branchSlug}' \
+--header 'Authorization: Bearer TOKEN'
 
 ```
 
@@ -28,26 +28,8 @@ curl --location BASE_URL/branch/{uuid}' \
 ```json
 {
     "status": "success",
-    "branch": {
-        "id": 7,
-        "label": "test",
-        "icon": "fab fa-adobe",
-        "slug": "individuel-test",
-        "description": null,
-        "ranking": 2,
-        "active": true,
-        "color": "",
-        "version": null,
-        "startDate": "",
-        "uuid": "1ee5b97a-357f-6766-9848-00505646c51f",
-        "createdAt": "2023-09-25T11:35:33+00:00",
-        "updatedAt": "2023-11-01T18:48:46+00:00",
-        "createBy": "user@wiassur.com",
-        "updateBy": "user@wiassur.com",
-        "removeBy": null,
-        "printables": [],
-        "photo": "",
-        "engineVersion": null
+    "state-contract": {
+       //State contract
     }
 }
 
@@ -66,25 +48,19 @@ curl --location BASE_URL/branch/{uuid}' \
 
  *Content-Type*    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   application/json
 
-
  *Transfer-Encoding*    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;      chunked
 
  *Connection*    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  keep-alive
  
  *Vary*    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Accept-Encoding
 
-
-
  *X-Powered-By*    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  PHP/8.2.7
-
 
  *Cache-Control*    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; no-cache, private
 
- 
  *Date*    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  Mon, 26 Jun 2023 19:54:39 GMT
  
-
-  *X-RateLimit-Limit*    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  600
+ *X-RateLimit-Limit*    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  600
 
   *X-RateLimit-Remaining*    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  599
 
