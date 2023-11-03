@@ -7,17 +7,17 @@ BASE_URL/customer/get/contracts/{uuid}
 
 ## HEADERS
 
-| Authorization | Basic TOKEN |
+| Authorization | Bearer TOKEN |
 | ------------- | ----------- |
 
 
 ## Example Request
 
-```curl
+```txt
 
 
-curl --location BASE_URL/get/contracts/{uuid}' \
---header 'Authorization: Basic TOKEN'
+txt --location BASE_URL/get/contracts/{uuid}' \
+--header 'Authorization: Bearer TOKEN'
 
 ```
 

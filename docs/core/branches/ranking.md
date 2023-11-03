@@ -12,7 +12,7 @@ BASE_URL/branch/update/ranks
 
 ## HEADERS
 
-| Authorization | Basic TOKEN |
+| Authorization | Bearer TOKEN |
 | ------------- | ----------- |
 
 
@@ -49,7 +49,7 @@ BASE_URL/branch/update/ranks
 
 ```curl
 curl --location 'BASE_URL/branch/update/ranks' \
---header 'Authorization: Basic TOKEN' \
+--header 'Authorization: Bearer TOKEN' \
 --data '{
   "ranks": [
     {

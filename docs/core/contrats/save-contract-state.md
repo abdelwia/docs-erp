@@ -1,22 +1,22 @@
 
 ### <span style="color:yellow">PUT</span> Sauvegarder l'état d'un contrat
 ````
-BASE_URL/save/state/{branchSlug}
+BASE_URL/contract/save/state/{branchSlug}
 ````
 
 ## HEADERS
 
-| Authorization | Basic TOKEN |
+| Authorization | Bearer TOKEN |
 | ------------- | ----------- |
 
 
 ## Example Request
 
-```curl
+```txt
 
 
-curl --location BASE_URL/branch/{uuid}' \
---header 'Authorization: Basic TOKEN'
+txt --location BASE_URL/contract/save/state/{branchSlug}' \
+--header 'Authorization: Bearer TOKEN'
 
 ```
 
@@ -28,26 +28,8 @@ curl --location BASE_URL/branch/{uuid}' \
 ```json
 {
     "status": "success",
-    "branch": {
-        "id": 7,
-        "label": "test",
-        "icon": "fab fa-adobe",
-        "slug": "individuel-test",
-        "description": null,
-        "ranking": 2,
-        "active": true,
-        "color": "",
-        "version": null,
-        "startDate": "",
-        "uuid": "1ee5b97a-357f-6766-9848-00505646c51f",
-        "createdAt": "2023-09-25T11:35:33+00:00",
-        "updatedAt": "2023-11-01T18:48:46+00:00",
-        "createBy": "user@wiassur.com",
-        "updateBy": "user@wiassur.com",
-        "removeBy": null,
-        "printables": [],
-        "photo": "",
-        "engineVersion": null
+    "state-contract": {
+       //State contract
     }
 }
 

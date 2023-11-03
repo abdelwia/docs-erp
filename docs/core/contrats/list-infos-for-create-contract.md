@@ -7,17 +7,17 @@ BASE_URL/contract/save/state/{branchSlug}
 
 ## HEADERS
 
-| Authorization | Basic TOKEN |
+| Authorization | Bearer TOKEN |
 | ------------- | ----------- |
 
 
 ## Example Request
 
-```curl
+```txt
 
 
-curl --location BASE_URL/contract/save/state/{branchSlug}' \
---header 'Authorization: Basic TOKEN'
+txt --location BASE_URL/contract/save/state/{branchSlug}' \
+--header 'Authorization: Bearer TOKEN'
 
 ```
 

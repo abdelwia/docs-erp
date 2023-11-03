@@ -1,104 +1,114 @@
+Voici la documentation pour la fonction que tu as fournie :
 
-### <span style="color:green">GET</span>  Créer un contrat
+### <span style="color:orange">POST</span> Nouveau Contrat
 
 ````
-BASE_URL/branch/create
+BASE_URL/contract/new/{slug}
 ````
 
-## HEADERS
+## Description
 
-| Authorization | Basic TOKEN |
+Cette route permet d'obtenir la liste des informations nécessaires pour créer un nouveau contrat.
+
+## Paramètres de l'URL
+
+| Paramètre   | Type   | Description                                  |
+| ----------- | ------ | -------------------------------------------- |
+| `slug`      | string | Le slug de la succursale.                    |
+
+## Requête
+
+### HEADERS
+
+| Authorization | Bearer TOKEN |
 | ------------- | ----------- |
 
+## Réponse
 
-## Example Request
+### Exemple de Requête
 
 ```curl
-
-
-curl --location BASE_URL/branch/create' \
---header 'Authorization: Basic TOKEN'
-
+curl --location BASE_URL/contract/new/{slug}' \
+--header 'Authorization: Bearer TOKEN'
 ```
 
+### Exemple de Réponse
 
-## Example Response
-
-::: details Body  
+::: details Corps  
 
 ```json
 {
     "status": "success",
+    "items": [
+        {
+            // Informations sur l'objet
+        },
+        {
+            // Informations sur l'objet
+        },
+        // ...
+    ],
     "branch": {
-        "id": 7,
-        "label": "test",
-        "icon": "fab fa-adobe",
-        "slug": "individuel-test",
-        "description": null,
-        "ranking": 2,
-        "active": true,
-        "color": "",
-        "version": null,
-        "startDate": "",
-        "uuid": "1ee5b97a-357f-6766-9848-00505646c51f",
-        "createdAt": "2023-09-25T11:35:33+00:00",
-        "updatedAt": "2023-11-01T18:48:46+00:00",
-        "createBy": "user@wiassur.com",
-        "updateBy": "user@wiassur.com",
-        "removeBy": null,
-        "printables": [],
-        "photo": "",
-        "engineVersion": null
-    }
+        // Informations sur la branche
+    },
+    "itemProperties": [
+        {
+            // Informations sur la propriété
+        },
+        {
+            // Informations sur la propriété
+        },
+        // ...
+    ],
+    "branchCategory": {
+        // Informations sur la catégorie de branche
+    },
+    "packCategories": [
+        {
+            // Informations sur la catégorie de pack
+        },
+        {
+            // Informations sur la catégorie de pack
+        },
+        // ...
+    ],
+    "guarantees": [
+        {
+            // Informations sur la garantie
+        },
+        {
+            // Informations sur la garantie
+        },
+        // ...
+    ],
+    "packs": [
+        {
+            // Informations sur le pack
+        },
+        {
+            // Informations sur le pack
+        },
+        // ...
+    ],
+    "premiumDetailModels": [
+        {
+            // Informations sur le modèle de détail de prime
+        },
+        {
+            // Informations sur le modèle de détail de prime
+        },
+        // ...
+    ],
+    "insurers": [
+        {
+            // Informations sur l'assureur
+        },
+        {
+            // Informations sur l'assureur
+        },
+        // ...
+    ]
 }
-
-
 ```
-
-
-
-
-:::
-
-
-::: details Headers (12)
-
- *Server*    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;      cloudflare
-
- *Content-Type*    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   application/json
-
-
- *Transfer-Encoding*    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;      chunked
-
- *Connection*    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  keep-alive
- 
- *Vary*    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Accept-Encoding
-
-
-
- *X-Powered-By*    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  PHP/8.2.7
-
-
- *Cache-Control*    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; no-cache, private
-
- 
- *Date*    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  Mon, 26 Jun 2023 19:54:39 GMT
- 
-
-  *X-RateLimit-Limit*    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  600
-
-  *X-RateLimit-Remaining*    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  599
-
-*Access-Control-Allow-Origin*    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  *
-
-
-*Content-Encoding*    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  gzip
-
-  
- 
-
-
-
-
 
 :::

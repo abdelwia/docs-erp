@@ -1,14 +1,13 @@
 
-### <span style="color:green">GET</span> Rechercher un customer
-````
+### <span style="color:green">POST</span>  Rechercher un contrat
 
-';l
-BASE_URL/customer/search/{value}
+````
+BASE_URL/contract/search/{uuid}
 ````
 
 ## HEADERS
 
-| Authorization | Basic TOKEN |
+| Authorization | Bearer TOKEN |
 | ------------- | ----------- |
 
 
@@ -17,8 +16,8 @@ BASE_URL/customer/search/{value}
 ```curl
 
 
-curl --location BASE_URL/customer/search/{value}' \
---header 'Authorization: Basic TOKEN'
+curl --location BASE_URL/branch/{uuid}' \
+--header 'Authorization: Bearer TOKEN'
 
 ```
 
@@ -30,27 +29,7 @@ curl --location BASE_URL/customer/search/{value}' \
 ```json
 {
     "status": "success",
-    "branch": {
-        "id": 7,
-        "label": "test",
-        "icon": "fab fa-adobe",
-        "slug": "individuel-test",
-        "description": null,
-        "ranking": 2,
-        "active": true,
-        "color": "",
-        "version": null,
-        "startDate": "",
-        "uuid": "1ee5b97a-357f-6766-9848-00505646c51f",
-        "createdAt": "2023-09-25T11:35:33+00:00",
-        "updatedAt": "2023-11-01T18:48:46+00:00",
-        "createBy": "user@wiassur.com",
-        "updateBy": "user@wiassur.com",
-        "removeBy": null,
-        "printables": [],
-        "photo": "",
-        "engineVersion": null
-    }
+    "data"
 }
 
 

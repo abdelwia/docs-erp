@@ -40,7 +40,7 @@ This response information can be used by the merchant to update the transaction'
 
 ## HEADERS
 
-| Authorization | Basic TOKEN |
+| Authorization | Bearer TOKEN |
 | ------------- | ----------- |
 
 
@@ -68,7 +68,7 @@ This response information can be used by the merchant to update the transaction'
 
 ```curl
 curl --location 'BASE_URL/v1/payment/process' \
---header 'Authorization: Basic TOKEN' \
+--header 'Authorization: Bearer TOKEN' \
 --data '{
     "payment_token": "91ce0608-16b3-4bf4-a2d8-1ab46e776cc2",
     "otp_code": "1234"

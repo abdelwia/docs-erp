@@ -31,7 +31,7 @@ Remember to handle all sensitive information returned from this endpoint with ca
 
 ## HEADERS
 
-| Authorization | Basic TOKEN |
+| Authorization | Bearer TOKEN |
 | ------------- | ----------- |
 
 ## PATH VARIABLES
@@ -46,7 +46,7 @@ Remember to handle all sensitive information returned from this endpoint with ca
 
 
 curl --location 'BASE_URL/v1/payment/payment_token' \
---header 'Authorization: Basic TOKEN'
+--header 'Authorization: Bearer TOKEN'
 
 ```
 
