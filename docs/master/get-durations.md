@@ -1,4 +1,4 @@
-### <span style="color:green">GET</span>  Durées
+### <span style="color:green">GET</span>  Lister des  Durées
 
 ````
 BASE_URL/duration/list

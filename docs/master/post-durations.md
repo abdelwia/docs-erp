@@ -1,4 +1,4 @@
-### <span style="color:orange">POST</span> Sauvegarde une durée
+### <span style="color:orange">POST</span> Créer/Modifier une Durée
 
 ````
 BASE_URL/duration/edit
@@ -6,13 +6,13 @@ BASE_URL/duration/edit
 
 <br/> <br/> 
 
-# Récupération de la liste des types de données
-Ce guide vous aide à comprendre comment sauvegarder une durée.
+# Création ou modification de la liste des types de données
+Ce guide vous aide à comprendre comment créer ou modifier une durée.
 
 
 ## Informations envoyées dans la requête
 
-Lors de la sauvegarde de la durée, les informations envoyées peuvent les suivantes :
+Lors de la création ou de la modification de la durée, les informations envoyées peuvent les suivantes :
 
 
 ## Corps
@@ -23,6 +23,7 @@ Lors de la sauvegarde de la durée, les informations envoyées peuvent les suiva
 ```json
 
 {
+    "id": "1", // Modification
     "label": "Rem pariatur Ipsum",
     "period": "Ipsum mollit et nul",
     "code": "",

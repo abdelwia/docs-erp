@@ -1,4 +1,4 @@
-### <span style="color:green">GET</span>  Type de Données
+### <span style="color:green">GET</span>  Générer un fichier de Types de données  
 
 ````
 BASE_URL/data/type/generate
