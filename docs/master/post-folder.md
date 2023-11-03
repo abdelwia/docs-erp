@@ -1,4 +1,4 @@
-### <span style="color:orange">POST</span> Créer un dossier
+### <span style="color:green">GET</span> Créer un dossier
 
 ````
 BASE_URL/api/uploader/create/folder

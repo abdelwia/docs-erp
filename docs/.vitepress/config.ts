@@ -128,15 +128,19 @@ export default defineConfig({
             collapsed: true,
             items: [
               {
+                text: "Description de l'API Master",
+                link: "/master/description",
+              },
+              {
                 text: "Api",
                 collapsed: true,
                 items: [
                   {
-                    text: "GET - Types de données",
-                    link: "/master/api-controller",
+                    text: "GET - Lister de Type de données",
+                    link: "/master/get-type-data",
                   },
                   {
-                    text: "GET -  Durées",
+                    text: "GET -  Lister des  Durées",
                     link: "/master/durations",
                   },
                 ],
@@ -146,11 +150,11 @@ export default defineConfig({
                 collapsed: true,
                 items: [
                   {
-                    text: "POST - Types de données",
+                    text: "POST - Sauvegarder une listte de types de données",
                     link: "/master/post-typedata",
                   },
                   {
-                    text: "GET -  Types de données",
+                    text: "GET -  Générer un fichier de Types de données",
                     link: "/master/get-generate-typedata",
                   },
                 ],
@@ -160,23 +164,13 @@ export default defineConfig({
                 collapsed: true,
                 items: [
                   {
-                    text: "GET - Durées",
+                    text: "GET - Lister des  Durées",
                     link: "/master/get-durations",
                   },
                   {
-                    text: "POST - Durées",
+                    text: "POST/PUT - Créer/Modifier une Durée",
                     link: "/master/post-durations",
                   },
-                ],
-              },
-              {
-                text: "Local",
-                collapsed: true,
-                items: [
-                  {
-                    text: "GET - Local",
-                    link: "/master/get-local",
-                  }
                 ],
               },
               {
@@ -184,11 +178,11 @@ export default defineConfig({
                 collapsed: true,
                 items: [
                   {
-                    text: "POST - Download fichier",
+                    text: "POST - Upload de fichier",
                     link: "/master/post-uploader",
                   },
                   {
-                    text: "POST - Dossier",
+                    text: "POST - Création de dossier",
                     link: "/master/post-folder",
                   },
                 ],
@@ -211,7 +205,7 @@ export default defineConfig({
             items: [
 
               {
-                text: "Description de l'API",
+                text: "Description de l'API Core",
                 link: "/core/description",
               },
               {
@@ -1131,25 +1125,167 @@ export default defineConfig({
             collapsed: true,
             items: [
               {
+                text: "Description de l'API Authentication",
+                link: "/auth/description",
+              },
+              {
                 text: "Api",
                 collapsed: true,
                 items: [
                   {
-                    text: "GET - Types de données",
-                    link: "/auth/api-controller",
+                    text: "GET - Récupérer tous les managers d'une zone",
+                    link: "/auth/api/get-manager",
                   },
                   {
-                    text: "GET -  Durées",
-                    link: "/auth/durations",
+                    text: "GET -  Récupérer un utilisateur d'une zone",
+                    link: "/auth/api/get-user",
+                  },
+                  {
+                    text: "GET -  Récupérer un utilisateur selon son code et son mail",
+                    link: "/auth/api/get-user-code",
+                  },
+                  {
+                    text: "GET -  Vérifier si un utilisateur GodFather",
+                    link: "/auth/api/get-user-status-gf",
+                  },
+                  {
+                    text: "GET -  Réinitialiser un mot de passe",
+                    link: "/auth/api/get-pwd",
+                  },
+                  {
+                    text: "PUT -  Mettre à jour un mot de passe",
+                    link: "/auth/api/put-pwd",
+                  },
+                  {
+                    text: "GET -  Récupérer tous les codes erreurs",
+                    link: "/auth/api/get-error-codes",
                   },
                 ],
-              }
+              },
+              {
+                text: "Parrainage",
+                collapsed: true,
+                items: [
+                  {
+                    text: "POST - Récupérer tous les parrainages",
+                    link: "/auth/parrainage/post-parrainage",
+                  },
+                ],
+              },
+              {
+                text: "Partner Api",
+                collapsed: true,
+                items: [
+                  {
+                    text: "GET -  Récupérer un partenaire d'une zone",
+                    link: "/auth/partner-api/get-user",
+                  },
+                  {
+                    text: "GET - Récupérer tous les partenaires d'une zone",
+                    link: "/auth/partner-api/get-partner",
+                  },
+                  {
+                    text: "GET - Récupérer tous les partenaires d'une agence",
+                    link: "/auth/partner-api/get-partner-agence",
+                  },
+                  {
+                    text: "POST - Créer ou modifier un partenaire",
+                    link: "/auth/partner-api/post-partner",
+                  },
+                ],
+              },
+              {
+                text: "Partner",
+                collapsed: true,
+                items: [
+                  {
+                    text: "POST - Créer ou modifier un partenaire",
+                    link: "/auth/partner/post-partner",
+                  },
+                  {
+                    text: "GET - Récupérer tous les partenaires selon un code",
+                    link: "/auth/partner/get-partner",
+                  },
+                ],
+              },
+              {
+                text: "Role",
+                collapsed: true,
+                items: [
+                  {
+                    text: "GET - Récupérer un role",
+                    link: "/auth/role/get-role",
+                  },
+                  {
+                    text: "POST - Créer ou modifier un role",
+                    link: "/auth/role/post-role",
+                  },
+                ],
+              },
+              {
+                text: "Selfcare",
+                collapsed: true,
+                items: [
+                  {
+                    text: "POST - Créer un compte",
+                    link: "/auth/selfcare/post-compte",
+                  },
+                  {
+                    text: "GET - Vérifier si un compte est affilié",
+                    link: "/auth/selfcare/get-check-affiliation",
+                  },
+                  {
+                    text: "POST - Enregistrer un appareil",
+                    link: "/auth/selfcare/post-device",
+                  },
+                  {
+                    text: "GET - Récupérer un role",
+                    link: "/auth/selfcare/get-role",
+                  },
+                  {
+                    text: "GET - Récupérer le code d'un compte",
+                    link: "/auth/selfcare/get-code-account",
+                  },
+                  {
+                    text: "GET - Vérifier si un compte existe",
+                    link: "/auth/selfcare/get-check-account",
+                  },
+                  {
+                    text: "GET - Régénérer le code d'un compte",
+                    link: "/auth/selfcare/get-refresh-code-account",
+                  },
+                  {
+                    text: "GET - Réinitialiser le mot de passe",
+                    link: "/auth/selfcare/get-reset-pwd",
+                  },
+                  {
+                    text: "GET - Mettre à jour le mot de passe",
+                    link: "/auth/selfcare/get-pwd",
+                  },
+                  {
+                    text: "POST - Se connecter à un compte",
+                    link: "/auth/selfcare/post-login",
+                  },
+                  {
+                    text: "GET - Mot de passe oublié ",
+                    link: "/auth/selfcare/get-fg-pwd",
+                  },
+                  {
+                    text: "PUT - Mettre à jour le profile",
+                    link: "/auth/selfcare/put-profil",
+                  },
+                ],
+              },
             ]
           },
           {
             text: "API Form",
             collapsed: true,
             items: [
+              {
+                text: "Description de l'API Form",
+                link: "/form/description",
+              },
               {
                 text: "Admin",
                 collapsed: true,

@@ -1,4 +1,4 @@
-### <span style="color:green">GET</span>  Type de Données
+### <span style="color:green">GET</span>  Liste de type de Données
 
 ````
 BASE_URL/data/type/edit
