@@ -1117,8 +1117,8 @@ export default defineConfig({
                 collapsed: true,
                 items: [
                   {
-                    text: "GET - dashbard",
-                    link: "/core/api-controller",
+                    text: "POST - File",
+                    link: "core/uploader/post-file",
                   },
 
 
