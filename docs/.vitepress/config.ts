@@ -948,168 +948,168 @@ export default defineConfig({
                   }
                 ]
               },
-              {
-                text: "Service",
-                collapsed: true,
-                items: [
-                  {
-                    text: "GET - is_pack_category_valid",
-                    link: "/core/api-controller",
-                  },
-                  {
-                    text: "GET -  calculate_premium",
-                    link: "/core/durations",
-                  },
-                  {
-                    text: "GET -  update_versions",
-                    link: "/core/durations",
-                  },
-                  {
-                    text: "GET -  get_contract_files",
-                    link: "/core/durations",
-                  },
-                  {
-                    text: "GET -  save_avenant_signature",
-                    link: "/core/durations",
-                  },
-                  {
-                    text: "GET -  printable_preview",
-                    link: "/core/durations",
-                  },
-                  {
-                    text: "GET -  get_offers",
-                    link: "/core/durations",
-                  }, {
-                    text: "GET -  get_order_data",
-                    link: "/core/durations",
-                  },
-                  {
-                    text: "GET -  init_data",
-                    link: "/core/durations",
-                  },
-                  {
-                    text: "GET -  get_comparator_data",
-                    link: "/core/durations",
-                  },
-                  {
-                    text: "GET -  get_comparator_datas",
-                    link: "/core/durations",
-                  }, {
-                    text: "GET -  update_schema",
-                    link: "/core/durations",
-                  }
-                ],
-              },
-              {
-                text: "Transtator",
-                collapsed: true,
-                items: [
-                  {
-                    text: "GET - langList",
-                    link: "/core/api-controller",
-                  },
-                  {
-                    text: "GET -  saveUnknow",
-                    link: "/core/durations",
-                  },
-                ],
-              },
-              {
-                text: "Delivery",
-                collapsed: true,
-                items: [
-                  {
-                    text: "GET - list",
-                    link: "/core/api-controller",
-                  },
-                  {
-                    text: "GET -  emit",
-                    link: "/core/durations",
-                  },
-                ],
-              },
-              {
-                text: "Partenaire",
-                collapsed: true,
-                items: [
-                  {
-                    text: "GET - dashboard",
-                    link: "/core/api-controller",
-                  },
+              // {
+              //   text: "Service",
+              //   collapsed: true,
+              //   items: [
+              //     {
+              //       text: "GET - is_pack_category_valid",
+              //       link: "/core/api-controller",
+              //     },
+              //     {
+              //       text: "GET -  calculate_premium",
+              //       link: "/core/durations",
+              //     },
+              //     {
+              //       text: "GET -  update_versions",
+              //       link: "/core/durations",
+              //     },
+              //     {
+              //       text: "GET -  get_contract_files",
+              //       link: "/core/durations",
+              //     },
+              //     {
+              //       text: "GET -  save_avenant_signature",
+              //       link: "/core/durations",
+              //     },
+              //     {
+              //       text: "GET -  printable_preview",
+              //       link: "/core/durations",
+              //     },
+              //     {
+              //       text: "GET -  get_offers",
+              //       link: "/core/durations",
+              //     }, {
+              //       text: "GET -  get_order_data",
+              //       link: "/core/durations",
+              //     },
+              //     {
+              //       text: "GET -  init_data",
+              //       link: "/core/durations",
+              //     },
+              //     {
+              //       text: "GET -  get_comparator_data",
+              //       link: "/core/durations",
+              //     },
+              //     {
+              //       text: "GET -  get_comparator_datas",
+              //       link: "/core/durations",
+              //     }, {
+              //       text: "GET -  update_schema",
+              //       link: "/core/durations",
+              //     }
+              //   ],
+              // },
+              // {
+              //   text: "Transtator",
+              //   collapsed: true,
+              //   items: [
+              //     {
+              //       text: "GET - langList",
+              //       link: "/core/api-controller",
+              //     },
+              //     {
+              //       text: "GET -  saveUnknow",
+              //       link: "/core/durations",
+              //     },
+              //   ],
+              // },
+              // {
+              //   text: "Delivery",
+              //   collapsed: true,
+              //   items: [
+              //     {
+              //       text: "GET - list",
+              //       link: "/core/api-controller",
+              //     },
+              //     {
+              //       text: "GET -  emit",
+              //       link: "/core/durations",
+              //     },
+              //   ],
+              // },
+              // {
+              //   text: "Partenaire",
+              //   collapsed: true,
+              //   items: [
+              //     {
+              //       text: "GET - dashboard",
+              //       link: "/core/api-controller",
+              //     },
 
 
-                ],
-              },
-              {
-                text: "Data",
-                collapsed: true,
-                items: [
-                  {
-                    text: "GET - manager_dashboard",
-                    link: "/core/api-controller",
-                  },
+              //   ],
+              // },
+              // {
+              //   text: "Data",
+              //   collapsed: true,
+              //   items: [
+              //     {
+              //       text: "GET - manager_dashboard",
+              //       link: "/core/api-controller",
+              //     },
 
 
-                ],
-              },
-              {
-                text: "Avenants",
-                collapsed: true,
-                items: [
-                  {
-                    text: "POST - Emmetre un avenant",
-                    link: "/core/api-controller",
-                  },
-                  {
-                    text: "GET -  Liste des avenants emis en une periode",
-                    link: "/core/durations",
-                  },
-                  {
-                    text: "GET -  Liste des objets inclus dans un avenant",
-                    link: "/core/durations",
-                  },
+              //   ],
+              // },
+              // {
+              //   text: "Avenants",
+              //   collapsed: true,
+              //   items: [
+              //     {
+              //       text: "POST - Emmetre un avenant",
+              //       link: "/core/api-controller",
+              //     },
+              //     {
+              //       text: "GET -  Liste des avenants emis en une periode",
+              //       link: "/core/durations",
+              //     },
+              //     {
+              //       text: "GET -  Liste des objets inclus dans un avenant",
+              //       link: "/core/durations",
+              //     },
 
-                  {
-                    text: "GET -  Télécharger la version pdf d'un devis d'avenant",
-                    link: "/core/durations",
-                  },
-                  {
-                    text: "GET -  Recuperer les informations d\'un avenant",
-                    link: "/core/durations",
-                  },
-                  {
-                    text: "GET -  Génère un lien de paiement pour un avenant",
-                    link: "/core/durations",
-                  },
-                  {
-                    text: "GET -  Liste de elements requis pour un contrat",
-                    link: "/core/durations",
-                  },
-                  {
-                    text: "GET -  contract_search",
-                    link: "/core/durations",
-                  },
-                  {
-                    text: "GET -  sendPaymentShort",
-                    link: "/core/durations",
-                  },
-
-
-
-                ]
-              },
-              {
-                text: "Uploader ",
-                collapsed: true,
-                items: [
-                  {
-                    text: "GET - dashbard",
-                    link: "/core/api-controller",
-                  },
+              //     {
+              //       text: "GET -  Télécharger la version pdf d'un devis d'avenant",
+              //       link: "/core/durations",
+              //     },
+              //     {
+              //       text: "GET -  Recuperer les informations d\'un avenant",
+              //       link: "/core/durations",
+              //     },
+              //     {
+              //       text: "GET -  Génère un lien de paiement pour un avenant",
+              //       link: "/core/durations",
+              //     },
+              //     {
+              //       text: "GET -  Liste de elements requis pour un contrat",
+              //       link: "/core/durations",
+              //     },
+              //     {
+              //       text: "GET -  contract_search",
+              //       link: "/core/durations",
+              //     },
+              //     {
+              //       text: "GET -  sendPaymentShort",
+              //       link: "/core/durations",
+              //     },
 
 
-                ],
-              },
+
+              //   ]
+              // },
+              // {
+              //   text: "Uploader ",
+              //   collapsed: true,
+              //   items: [
+              //     {
+              //       text: "GET - dashbard",
+              //       link: "/core/api-controller",
+              //     },
+
+
+              //   ],
+              // },
             ],
           },
           {

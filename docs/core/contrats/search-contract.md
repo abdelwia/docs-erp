@@ -1,5 +1,5 @@
 
-### <span style="color:green">POST</span>  Rechercher un contrat
+### <span style="color:green">GET</span>  Rechercher un contrat
 
 ````
 BASE_URL/contract/search/{uuid}

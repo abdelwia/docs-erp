@@ -1,84 +1,56 @@
+Voici la documentation pour la fonction que tu as fournie :
 
-### <span style="color:green">POST</span>  Rechercher un contrat
+### <span style="color:green">GET</span> Rechercher un customer
 
 ````
-BASE_URL/contract/search/{uuid}
+BASE_URL/customer/search/{value}
 ````
 
-## HEADERS
+## Description
+
+Cette route permet de rechercher un client en fonction de la valeur spécifiée.
+
+## Paramètres de l'URL
+
+| Paramètre   | Type   | Description                                  |
+| ----------- | ------ | -------------------------------------------- |
+| `value`      | string | La valeur de recherche pour le client.        |
+
+## Requête
+
+### HEADERS
 
 | Authorization | Bearer TOKEN |
 | ------------- | ----------- |
 
+## Réponse
 
-## Example Request
+### Exemple de Requête
 
 ```curl
-
-
-curl --location BASE_URL/branch/{uuid}' \
+curl --location BASE_URL/customer/search/{value}' \
 --header 'Authorization: Bearer TOKEN'
-
 ```
 
+### Exemple de Réponse
 
-## Example Response
-
-::: details Body  
+::: details Corps  
 
 ```json
 {
     "status": "success",
-    "data"
+    "customers": [
+        {
+            // Informations sur le client
+        },
+        {
+            // Informations sur le client
+        },
+        // ...
+    ]
 }
-
-
 ```
 
-
-
-
 :::
 
-
-::: details Headers (12)
-
- *Server*    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;      cloudflare
-
- *Content-Type*    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   application/json
-
-
- *Transfer-Encoding*    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;      chunked
-
- *Connection*    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  keep-alive
- 
- *Vary*    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Accept-Encoding
-
-
-
- *X-Powered-By*    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  PHP/8.2.7
-
-
- *Cache-Control*    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; no-cache, private
-
- 
- *Date*    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  Mon, 26 Jun 2023 19:54:39 GMT
- 
-
-  *X-RateLimit-Limit*    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  600
-
-  *X-RateLimit-Remaining*    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  599
-
-*Access-Control-Allow-Origin*    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  *
-
-
-*Content-Encoding*    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  gzip
-
-  
- 
-
-
-
-
-
-:::
+Cela devrait correspondre à la documentation pour cette fonction. Si tu as besoin de plus d'informations ou d'autres ajustements, n'hésite pas à me le dire !
