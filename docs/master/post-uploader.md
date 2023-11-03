@@ -1,4 +1,4 @@
-### <span style="color:orange">POST</span> Télécharger un fichier
+### <span style="color:orange">POST</span> Upload un fichier
 
 ````
 BASE_URL/api/uploader
@@ -6,8 +6,8 @@ BASE_URL/api/uploader
 
 <br/> <br/> 
 
-# Récupération des données pour le téléchargement du fichier
-Ce guide vous aide à comprendre comment télécharger un fichier.
+# Récupération des données pour l'upload du fichier
+Ce guide vous aide à comprendre comment upload un fichier.
 
 
 ## Informations envoyées dans la requête

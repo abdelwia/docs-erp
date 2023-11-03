@@ -1,4 +1,4 @@
-### <span style="color:orange">POST</span> Sauvegarde une listte de types de données
+### <span style="color:orange">POST</span> Sauvegarde une liste de types de données
 
 ````
 BASE_URL/data/type/edit

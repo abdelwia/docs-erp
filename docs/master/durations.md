@@ -1,4 +1,4 @@
-### <span style="color:green">GET</span>  Type de Données
+### <span style="color:green">GET</span>  Liste des durées
 
 ````
 BASE_URL/api/get/durations
