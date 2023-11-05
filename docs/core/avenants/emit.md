@@ -1,23 +1,21 @@
 
-### <span style="color:yellow">PUT</span> Générer le fichier JSON d'une branche
+
+### <span style="color:orange">POST</span> Emettre un avenant
 
 ````
-BASE_URL/branch/generate
+BASE_URL/avenant/emit/{uuid}
 ````
-
-## Méthode
-
-- `PUT`
 
 ## EN-TÊTES
 
 | Authorization | Bearer TOKEN |
 | ------------- | ----------- |
 
+
 ## Exemple de Requête
 
 ```curl
-curl --location BASE_URL/branch/generate' \
+curl --location BASE_URL/avenant/emit/{uuid}' \
 --header 'Authorization: Bearer TOKEN'
 ```
 
