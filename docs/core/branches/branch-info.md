@@ -1,83 +1,38 @@
-### <span style="color:green">GET</span> Récuperer les informations d'une branche
+
+
+### <span style="color:green">GET</span> Récupérer les informations d'une branche
 
 ````
-BASE_URL/branch/{uuid}
+BASE_URL/branch/get/data/{slug}
 ````
 
-## HEADERS
+## Paramètres
+
+- `{slug}` : Slug de la branche
+
+## EN-TÊTES
 
 | Authorization | Bearer TOKEN |
 | ------------- | ----------- |
 
-
-## Example Request
+## Exemple de Requête
 
 ```curl
-
-
-curl --location BASE_URL/branch/{uuid}' \
+curl --location BASE_URL/branch/get/data/SLUG' \
 --header 'Authorization: Bearer TOKEN'
-
 ```
 
+## Exemple de Réponse
 
-## Example Response
-
-::: details Body  
+::: details Corps  
 
 ```json
 {
     "status": "success",
-    "data"
+    "branch": {
+        // Informations de la branche
+    }
 }
-
-
 ```
-
-
-
-
-:::
-
-
-::: details Headers (12)
-
- *Server*    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;      cloudflare
-
- *Content-Type*    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   application/json
-
-
- *Transfer-Encoding*    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;      chunked
-
- *Connection*    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  keep-alive
- 
- *Vary*    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Accept-Encoding
-
-
-
- *X-Powered-By*    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  PHP/8.2.7
-
-
- *Cache-Control*    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; no-cache, private
-
- 
- *Date*    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  Mon, 26 Jun 2023 19:54:39 GMT
- 
-
-  *X-RateLimit-Limit*    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  600
-
-  *X-RateLimit-Remaining*    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  599
-
-*Access-Control-Allow-Origin*    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  *
-
-
-*Content-Encoding*    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  gzip
-
-  
- 
-
-
-
-
 
 :::

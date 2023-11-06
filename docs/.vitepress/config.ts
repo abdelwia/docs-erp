@@ -494,128 +494,118 @@ export default defineConfig({
                 text: "Description de l'API CORE",
                 link: "/core/description",
               },
-              // {
+              {
 
-              //   text: "Api Controller",
-              //   collapsed: true,
-              //   items: [
-              //     {
-              //       text: "GET - Liste des catégories de pack ",
-              //       link: "/core/api-controller",
-              //     },
-              //     {
-              //       text: "GET -  Liste de branches",
-              //       link: "/core/durations",
-              //     }, {
-              //       text: "GET -  Information du partenaire connecté",
-              //       link: "/core/durations",
-              //     },
-              //     {
-              //       text: "GET -  Liste des agences du partenaire",
-              //       link: "/core/durations",
-              //     },
-              //     {
-              //       text: "GET -  api_agency_edit",
-              //       link: "/core/durations",
-              //     },
-              //     {
-              //       text: "GET - Liste des objets par branche",
-              //       link: "/core/durations",
-              //     },
-              //     {
-              //       text: "GET - Liste des catégories de branche active",
-              //       link: "/core/durations",
-              //     },
-              //     {
-              //       text: "GET - Recuperer les informations d\'un partenaire via son code",
-              //       link: "/core/durations",
-              //     },
-              //     {
-              //       text: "GET - init_wave_payment",
-              //       link: "/core/durations",
-              //     },
-              //     {
-              //       text: "GET - Initier un paiement via orange money",
-              //       link: "/core/durations",
-              //     },
-              //     {
-              //       text: "GET -  Initier un paiement via cinetpay",
-              //       link: "/core/durations",
-              //     },
-              //     {
-              //       text: "GET -  Créer un contrat externe depuis un devis",
-              //       link: "/core/durations",
-              //     },
-              //     {
-              //       text: "GET -  update_engines",
-              //       link: "/core/durations",
-              //     },
-              //     {
-              //       text: "GET -  get_contract_files",
-              //       link: "/core/durations",
-              //     },
-              //     {
-              //       text: "GET -  get_item_printable",
-              //       link: "/core/durations",
-              //     }, {
-              //       text: "GET -  check_payment_status",
-              //       link: "/core/durations",
-              //     }
+                text: "Api Controller",
+                collapsed: true,
+                items: [
+                  {
+                    text: "GET - Liste des catégories de pack ",
+                    link: "/core/API/list-pack-category",
+                  },
+                  {
+                    text: "GET -  Liste de branches",
+                    link: "/core/API/list-branch",
+                  }, {
+                    text: "GET -  Information du partenaire connecté",
+                    link: "/core/API/info-partner",
+                  },
+                  {
+                    text: "GET -  Liste des agences du partenaire",
+                    link: "/core/API/list-agence",
+                  },
+                  {
+                    text: "POST -  Modifier une agence du partenaire",
+                    link: "/core/API/edit-agence",
+                  },
+                  {
+                    text: "GET - Liste des objets par branche",
+                    link: "/core/API/list-object",
+                  },
+                  {
+                    text: "GET - Liste des catégories de branche active",
+                    link: "/core/API/list-cat-branch-active",
+                  },
+                  {
+                    text: "GET - Recuperer les informations d\'un partenaire via son code",
+                    link: "/core/API/info-partner-by-code",
+                  },
+                  {
+                    text: "GET - Initialiser le paiement avec Wave",
+                    link: "/core/API/init-wave-payment",
+                  },
+                  {
+                    text: "GET - Initier un paiement via orange money",
+                    link: "/core/API/init-orange-payment",
+                  },
+                  {
+                    text: "GET -  Initier un paiement via cinetpay",
+                    link: "/core/API/init-cinetpay-payment",
+                  },
+                  {
+                    text: "GET -  Créer un contrat externe depuis un devis",
+                    link: "/core/API/extern-contract",
+                  },
+                  {
+                    text: "GET -  Récupérer les fichiers d'un contrat",
+                    link: "/core/API/get-contract-file",
+                  },
+                  {
+                    text: "GET -  Récupérer un document imprimable",
+                    link: "/core/API/get-item-printable",
+                  }, {
+                    text: "GET -   Vérifier le Statut d'un Paiement",
+                    link: "/core/API/check-payment-status",
+                  }
 
-              //   ]
-              // },
-              // {
-              //   text: "Branches",
-              //   collapsed: true,
-              //   items: [
+                ]
+              },
+              {
+                text: "Branches",
+                collapsed: true,
+                items: [
+                  {
+                    text: "GET - Liste complète des branches",
+                    link: "/core/branches/liste-des-branches",
+                  },
+                  {
+                    text: "GET -  Activer/Désactiver une branche",
+                    link: "/core/branches/activate",
+                  }, {
+                    text: "POST -  Actualiser l'orde d'affichage des branches",
+                    link: "/core/branches/ranking",
+                  },
+                  {
+                    text: "GET -  Récuperer les informations d'une branche",
+                    link: "/core/branches/branch-info",
+                  },
+                  {
+                    text: "GET -  Récuperer le moteur de calcul actif d'une branche",
+                    link: "/core/branches/get-calcul-active-engine",
+                  },
+                  {
+                    text: "POST -  Creer / Modifier une branche",
+                    link: "/core/branches/create-branche",
+                  },
+                  {
+                    text: "GET -  Générer le fichier JSON d'une branche",
+                    link: "/core/branches/generateJSON",
+                  },
+                  {
+                    text: "GET -  Liste complète des catégories de branche",
+                    link: "/core/branches/liste-des-categories",
+                  },
+                  {
+                    text: "PUT -  Modifier les informations d'une catégorie de branche",
+                    link: "/core/branches/modify-category",
+                  },
+                  {
+                    text: "GET -  Récuperer les objets d'une branche",
+                    link: "/core/branches/get-objects",
+                  }
 
-              //     {
-              //       text: "Introduction",
-              //       link: "/core/branches/introduction",
-              //     },
-
-              //     {
-              //       text: "GET - Liste complète des branches",
-              //       link: "/core/branches/liste-des-branches",
-              //     },
-              //     {
-              //       text: "GET -  Activer/Désactiver une branche",
-              //       link: "/core/branches/activate",
-              //     }, {
-              //       text: "POST -  Actualiser l'orde d'affichage des branches",
-              //       link: "/core/branches/ranking",
-              //     },
-              //     {
-              //       text: "GET -  Récuperer les informations d'une branche",
-              //       link: "/core/branches/branch-info",
-              //     },
-              //     {
-              //       text: "GET -  Récuperer le moteur de calcul actif d'une branche",
-              //       link: "/core/durations",
-              //     },
-              //     {
-              //       text: "GET -  Créer une branche",
-              //       link: "/core/branches/create-branche",
-              //     },
-              //     {
-              //       text: "GET -  Générer le fichier JSON d'une branche",
-              //       link: "/core/branches/generateJSON",
-              //     },
-              //     {
-              //       text: "GET -  Liste complète des catégories de branche",
-              //       link: "/core/branches/liste-des-categories",
-              //     },
-              //     {
-              //       text: "GET -  Modifier les informations d'une catégorie de branche",
-              //       link: "/core/branches/modify-category",
-              //     },
-              //     {
-              //       text: "GET -  Récuperer les objets d'une branche",
-              //       link: "/core/branches/get-objects",
-              //     }
-
-              //   ]
-              // },
+                ]
+              },
               {
                 text: "Checkouts",
                 collapsed: true,
@@ -1228,168 +1218,158 @@ export default defineConfig({
                   }
                 ]
               },
-              // {
-              //   text: "Service",
-              //   collapsed: true,
-              //   items: [
-              //     {
-              //       text: "GET - is_pack_category_valid",
-              //       link: "/core/api-controller",
-              //     },
-              //     {
-              //       text: "GET -  calculate_premium",
-              //       link: "/core/durations",
-              //     },
-              //     {
-              //       text: "GET -  update_versions",
-              //       link: "/core/durations",
-              //     },
-              //     {
-              //       text: "GET -  get_contract_files",
-              //       link: "/core/durations",
-              //     },
-              //     {
-              //       text: "GET -  save_avenant_signature",
-              //       link: "/core/durations",
-              //     },
-              //     {
-              //       text: "GET -  printable_preview",
-              //       link: "/core/durations",
-              //     },
-              //     {
-              //       text: "GET -  get_offers",
-              //       link: "/core/durations",
-              //     }, {
-              //       text: "GET -  get_order_data",
-              //       link: "/core/durations",
-              //     },
-              //     {
-              //       text: "GET -  init_data",
-              //       link: "/core/durations",
-              //     },
-              //     {
-              //       text: "GET -  get_comparator_data",
-              //       link: "/core/durations",
-              //     },
-              //     {
-              //       text: "GET -  get_comparator_datas",
-              //       link: "/core/durations",
-              //     }, {
-              //       text: "GET -  update_schema",
-              //       link: "/core/durations",
-              //     }
-              //   ],
-              // },
-              // {
-              //   text: "Transtator",
-              //   collapsed: true,
-              //   items: [
-              //     {
-              //       text: "GET - langList",
-              //       link: "/core/api-controller",
-              //     },
-              //     {
-              //       text: "GET -  saveUnknow",
-              //       link: "/core/durations",
-              //     },
-              //   ],
-              // },
-              // {
-              //   text: "Delivery",
-              //   collapsed: true,
-              //   items: [
-              //     {
-              //       text: "GET - list",
-              //       link: "/core/api-controller",
-              //     },
-              //     {
-              //       text: "GET -  emit",
-              //       link: "/core/durations",
-              //     },
-              //   ],
-              // },
-              // {
-              //   text: "Partenaire",
-              //   collapsed: true,
-              //   items: [
-              //     {
-              //       text: "GET - dashboard",
-              //       link: "/core/api-controller",
-              //     },
+              {
+                text: "Service",
+                collapsed: true,
+                items: [
+                  {
+                    text: "GET - Vérifier si une catégorie de pack est valide",
+                    link: "/core/service/is-pack-category-valid",
+                  },
+                  {
+                    text: "POST -  Calculer la prime",
+                    link: "/core/service/calculate-premium",
+                  },
+                  {
+                    text: "POST -  Mettre à jour les versions des APIs",
+                    link: "/core/service/update-version",
+                  },
+                  {
+                    text: "GET -  Obtenir les fichiers d'un avenant",
+                    link: "/core/service/get-avenant-files",
+                  },
+                  {
+                    text: "GET -  Enregistrer la signature d'un avenant",
+                    link: "/core/service/save-avenant-signature",
+                  },
+                  {
+                    text: "GET -  Aperçu imprimable",
+                    link: "/core/service/printable-preview",
+                  },
+                  {
+                    text: "GET -  Obtenir les offres",
+                    link: "/core/service/get-offers",
+                  }, {
+                    text: "GET -   Obtenir les données de commande",
+                    link: "/core/service/get-order-data",
+                  },
+                  {
+                    text: "GET -  Obtenir les données d'initialisation",
+                    link: "/core/service/init-data",
+                  },
+                  {
+                    text: "GET -  Obtenir les données de comparaison",
+                    link: "/core/service/get-comparator-data",
+                  },
+                  {
+                    text: "GET -  Obtenir les données de comparaison",
+                    link: "/core/service/get-comparator-datas",
+                  }, {
+                    text: "POST - Mettre à jour le schéma de la base de données",
+                    link: "/core/service/update-version",
+                  }
+                ],
+              },
+              {
+                text: "Transtator",
+                collapsed: true,
+                items: [
+                  {
+                    text: "GET - Liste des langues et des traductions",
+                    link: "/core/translator/lang-list",
+                  },
+                  {
+                    text: "POST - Sauvegarder les traductions inconnues",
+                    link: "/core/translator/save-unknow",
+                  },
+                ],
+              },
+              {
+                text: "Delivery",
+                collapsed: true,
+                items: [
+                  {
+                    text: "GET - Liste des langues et des traductions",
+                    link: "/core/delivery/list",
+                  },
+                  {
+                    text: "GET -  emit",
+                    link: "/core/delivery/emit",
+                  },
+                ],
+              },
+              {
+                text: "Data",
+                collapsed: true,
+                items: [
+                  {
+                    text: "GET - Tableau de bord du gestionnaire ",
+                    link: "/core/data/manager-dashboard",
+                  },
 
 
-              //   ],
-              // },
-              // {
-              //   text: "Data",
-              //   collapsed: true,
-              //   items: [
-              //     {
-              //       text: "GET - manager_dashboard",
-              //       link: "/core/api-controller",
-              //     },
+                ],
+              },
+              {
+                text: "Avenants",
+                collapsed: true,
+                items: [
+               
+                  {
+                    text: "POST - Emmetre un avenant",
+                    link: "/core/avenants/emit",
+                  },
+                  {
+                    text: "GET -  Liste des avenants emis en une periode",
+                    link: "/core/avenants/avenant-list-period",
+                  },
+                  {
+                    text: "GET -  Liste des objets inclus dans un avenant",
+                    link: "/core/avenants/list-object-avenant",
+                  },
 
+                  {
+                    text: "GET -  Télécharger la version pdf d'un devis d'avenant",
+                    link: "/core/avenants/download",
+                  },
+                  {
+                    text: "GET -  Recuperer les informations d\'un avenant",
+                    link: "/core/avenants/info-avenant",
+                  },
+                  {
+                    text: "GET -  Génère un lien de paiement pour un avenant",
+                    link: "/core/avenants/payment",
+                  },
+                  {
+                    text: "GET -  Liste de elements requis pour un contrat",
+                    link: "/core/avenants/required-list",
+                  },
+                  {
+                    text: "POST -   Rechercher des avenants",
+                    link: "/core/avenants/search",
+                  },
+                  {
+                    text: "POST -  Envoyer un lien de paiement court",
+                    link: "/core/avenants/send-payment-short",
+                  },
 
-              //   ],
-              // },
-              // {
-              //   text: "Avenants",
-              //   collapsed: true,
-              //   items: [
-              //     {
-              //       text: "POST - Emmetre un avenant",
-              //       link: "/core/api-controller",
-              //     },
-              //     {
-              //       text: "GET -  Liste des avenants emis en une periode",
-              //       link: "/core/durations",
-              //     },
-              //     {
-              //       text: "GET -  Liste des objets inclus dans un avenant",
-              //       link: "/core/durations",
-              //     },
+                ]
+              },
+              {
+                text: "Uploader ",
+                collapsed: true,
+                items: [
+                  {
+                    text: "POST - Gestion des televersements",
+                    link: "/core/uploader/upload-manager",
+                  },
+                  {
+                    text: "POST - Creer un dossier",
+                    link: "/core/uploader/create-folder",
+                  },
 
-              //     {
-              //       text: "GET -  Télécharger la version pdf d'un devis d'avenant",
-              //       link: "/core/durations",
-              //     },
-              //     {
-              //       text: "GET -  Recuperer les informations d\'un avenant",
-              //       link: "/core/durations",
-              //     },
-              //     {
-              //       text: "GET -  Génère un lien de paiement pour un avenant",
-              //       link: "/core/durations",
-              //     },
-              //     {
-              //       text: "GET -  Liste de elements requis pour un contrat",
-              //       link: "/core/durations",
-              //     },
-              //     {
-              //       text: "GET -  contract_search",
-              //       link: "/core/durations",
-              //     },
-              //     {
-              //       text: "GET -  sendPaymentShort",
-              //       link: "/core/durations",
-              //     },
-
-
-
-              //   ]
-              // },
-              // {
-              //   text: "Uploader ",
-              //   collapsed: true,
-              //   items: [
-              //     {
-              //       text: "GET - dashbard",
-              //       link: "/core/api-controller",
-              //     },
-
-
-              //   ],
-              // },
+                ],
+              },
             ],
           },
          
