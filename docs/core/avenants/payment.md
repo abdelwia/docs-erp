@@ -1,8 +1,11 @@
 
-### <span style="color:green">GET</span> Liste complète des catégories de branche
+
+
+
+### <span style="color:yellow">GET</span> Générer un lien de paiement pour un avenant
 
 ````
-BASE_URL/branch/category/list
+BASE_URL/avenant/generate/payment/link/{uuid}
 ````
 
 ## EN-TÊTES
@@ -10,10 +13,11 @@ BASE_URL/branch/category/list
 | Authorization | Bearer TOKEN |
 | ------------- | ----------- |
 
+
 ## Exemple de Requête
 
 ```curl
-curl --location BASE_URL/branch/category/list' \
+curl --location BASE_URL/avenant/generate/payment/link/{uuid}' \
 --header 'Authorization: Bearer TOKEN'
 ```
 
@@ -24,9 +28,7 @@ curl --location BASE_URL/branch/category/list' \
 ```json
 {
     "status": "success",
-    "categories": [
-        // Liste des catégories de branche
-    ]
+    "links": []
 }
 ```
 
