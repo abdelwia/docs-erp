@@ -279,6 +279,134 @@ export default defineConfig({
                   },
                 ],
               },
+              {
+                text: "Service",
+                collapsed: true,
+                items: [
+                  {
+                    text: "GET - Récupérer tous les managers disponibles",
+                    link: "/auth/service/get-manager",
+                  },
+                  {
+                    text: "GET - Mettre à jour le code du partner",
+                    link: "/auth/service/get-partner-code",
+                  },
+                  {
+                    text: "POST - Créer une tache",
+                    link: "/auth/service/post-task",
+                  },
+                  {
+                    text: "GET - Vérifier si un compte est affilié",
+                    link: "/auth/service/get-check-affiliation",
+                  },
+                  {
+                    text: "POST - Valider une affiliation",
+                    link: "/auth/service/post-validate-affiliation",
+                  },
+                  {
+                    text: "DELETE - Supprimer la tache d'un subject",
+                    link: "/auth/service/delete-task-subject",
+                  },
+                  {
+                    text: "POST - Valider une tache pour un sujet",
+                    link: "/auth/service/post-validate-task",
+                  },
+                  {
+                    text: "GET - Récupérer les mails des managers",
+                    link: "/auth/service/get-manager-mail",
+                  },
+                  {
+                    text: "GET - Identifier un utilisateur",
+                    link: "/auth/service/get-user-identity",
+                  },
+                  {
+                    text: "GET - Récupérer les tenants",
+                    link: "/auth/service/get-tenants",
+                  },
+                  {
+                    text: "POST - Envoyer des sms",
+                    link: "/auth/service/post-sms",
+                  },
+                ],
+              },
+              {
+                text: "Tenant",
+                collapsed: true,
+                items: [
+                  {
+                    text: "GET - Récupérer la liste des tenants",
+                    link: "/auth/tenant/get-tenant",
+                  },
+                  {
+                    text: "POST - Créer ou modifier un tenant",
+                    link: "/auth/tenant/post-tenant",
+                  },
+                ],
+              },
+              {
+                text: "Todo",
+                collapsed: true,
+                items: [
+                  {
+                    text: "GET - Valider un todo",
+                    link: "/auth/todo/get-todo-validate",
+                  },
+                  {
+                    text: "GET - Récupérer la liste de todo par manager",
+                    link: "/auth/todo/get-todo-manager",
+                  },
+                  {
+                    text: "GET - Récupérer la liste de todo par sujet",
+                    link: "/auth/todo/get-todo-sujet",
+                  },
+                  {
+                    text: "POST - Créer ou modifier un todo",
+                    link: "/auth/todo/post-todo",
+                  },
+                  {
+                    text: "GET - Annuler un todo",
+                    link: "/auth/todo/get-todo-cancel",
+                  },
+                ],
+              },
+              {
+                text: "Utilisateur",
+                collapsed: true,
+                items: [
+                  {
+                    text: "GET - Récupérer la liste des utilisateurs",
+                    link: "/auth/user/get-user",
+                  },
+                  {
+                    text: "POST - Créer ou modifier un utilisateur",
+                    link: "/auth/user/post-user",
+                  },
+                  {
+                    text: "GET - Bloquer un utilisateur",
+                    link: "/auth/user/get-user-block",
+                  },
+                  {
+                    text: "GET - Débloquer un utilisateur",
+                    link: "/auth/user/get-user-unblock",
+                  },
+                  {
+                    text: "GET - Montrer un utilisateur",
+                    link: "/auth/user/get-user-show",
+                  },
+                  {
+                    text: "GET - Récupérer la liste des managers",
+                    link: "/auth/user/get-user-managers",
+                  },
+                  {
+                    text: "GET - Auroriser un utilisateur dans un tenant",
+                    link: "/auth/user/get-user-allow",
+                  },
+                  {
+                    text: "GET - Interdire un utilisateur dans un tenant",
+                    link: "/auth/user/get-user-forbide",
+                  },
+                ],
+              },
             ]
           },
           {
@@ -1524,6 +1652,244 @@ export default defineConfig({
                   {
                     text: "POST -  Envoi lien de Paiement",
                     link: "/form/question/post-send-link-paiement",
+                  },
+                ],
+              },
+              {
+                text: "Response",
+                collapsed: true,
+                items: [
+                  {
+                    text: "POST - Suppression de reponse",
+                    link: "/form/response/delete-response",
+                  },
+                ],
+              },
+              {
+                text: "Response Group",
+                collapsed: true,
+                items: [
+                  {
+                    text: "POST - Recherche de reponse group",
+                    link: "/form/response-group/post-response-group",
+                  },
+                  {
+                    text: "GET - Récupérer un reponse group",
+                    link: "/form/response-group/get-response-group",
+                  },
+                  {
+                    text: "POST - Réinitialiser le reponse group",
+                    link: "/form/response-group/post-response-group-reset",
+                  },
+                  {
+                    text: "DELETE - Supprimer le reponse group",
+                    link: "/form/response-group/delete-response-group",
+                  },
+                  {
+                    text: "PUT - Mettre à jour un partenaire",
+                    link: "/form/response-group/put-partner",
+                  },
+                  {
+                    text: "GET - Afficher un reponse group",
+                    link: "/form/response-group/get-response-group-show",
+                  },
+                ],
+              },
+              {
+                text: "Section",
+                collapsed: true,
+                items: [
+                  {
+                    text: "GET - Récupérer une section",
+                    link: "/form/section/get-section",
+                  },
+                  {
+                    text: "PUT - Mettre à jour une section",
+                    link: "/form/section/put-section",
+                  },
+                  {
+                    text: "POST - Créer/modifier une section",
+                    link: "/form/section/post-section",
+                  },
+                  {
+                    text: "DELETE - Supprimer une section",
+                    link: "/form/section/delete-section",
+                  },
+                  {
+                    text: "GET - Afficher un reponse group",
+                    link: "/form/section/get-section-show",
+                  },
+                ],
+              },
+              {
+                text: "Selfcare",
+                collapsed: true,
+                items: [
+                  {
+                    text: "GET - Enregistrer un response group",
+                    link: "/form/selfcare/get-response-group",
+                  },
+                  {
+                    text: "GET - Charger un response group",
+                    link: "/form/selfcare/get-response-group-load",
+                  },
+                  {
+                    text: "POST - Créer/modifier un response group",
+                    link: "/form/selfcare/post-group-response",
+                  },
+                  {
+                    text: "DELETE - Supprimer un response group",
+                    link: "/form/selfcare/delete-response-group",
+                  },
+                  {
+                    text: "GET - Récupérer un response group",
+                    link: "/form/selfcare/get-response-group-get",
+                  },
+                ],
+              },
+              {
+                text: "Service",
+                collapsed: true,
+                items: [
+                  {
+                    text: "GET - Récupérer un service",
+                    link: "/form/service/get-service",
+                  },
+                  {
+                    text: "GET - Mettre à jour le code d'un devis",
+                    link: "/form/service/get-service",
+                  },
+                  {
+                    text: "PUT - Mettre à jour les versions d'apis",
+                    link: "/form/service/put-service-version",
+                  },
+                  {
+                    text: "GET - Définir la méthode de paiement",
+                    link: "/form/service/get-method-service",
+                  },
+                  {
+                    text: "GET - Valider la méthode de paiement",
+                    link: "/form/service/get-validate-service",
+                  },
+                  {
+                    text: "GET - Invalider la méthode de paiement",
+                    link: "/form/service/get-invalidate-service",
+                  },
+                  {
+                    text: "GET - Mettre un paiement en attente",
+                    link: "/form/service/get-wait-service",
+                  },
+                  {
+                    text: "GET - Mettre à jour les paramètres de base de données",
+                    link: "/form/service/get-maj-db",
+                  },
+                ],
+              },
+              {
+                text: "Step",
+                collapsed: true,
+                items: [
+                  {
+                    text: "POST - Créer/modifier un step",
+                    link: "/form/step/post-step",
+                  },
+                  {
+                    text: "DELETE - Supprimer un step",
+                    link: "/form/step/delete-step",
+                  },
+                  {
+                    text: "PUT - Mettre à jour un step",
+                    link: "/form/step/put-step",
+                  },
+                ],
+              },
+              {
+                text: "Survey",
+                collapsed: true,
+                items: [
+                  {
+                    text: "POST - Créer/modifier un alias d'un survey",
+                    link: "/form/survey/post-alias",
+                  },
+                  {
+                    text: "GET - La liste des surveys par branche",
+                    link: "/form/survey/get-survey-branch",
+                  },
+                  {
+                    text: "GET - La liste des surveys",
+                    link: "/form/survey/get-survey",
+                  },
+                  {
+                    text: "GET - La liste des surveys par platform",
+                    link: "/form/survey/get-survey-branch-platform",
+                  },
+                  {
+                    text: "POST - La liste des surveys par tags",
+                    link: "/form/survey/post-survey-tags",
+                  },
+                  {
+                    text: "POST - Générer le survey",
+                    link: "/form/survey/post-survey-generate",
+                  },
+                  {
+                    text: "GET - Activer/désactiviter un survey",
+                    link: "/form/survey/get-toggle-survey",
+                  },
+                  {
+                    text: "PUT - Mettre à jour le mapping",
+                    link: "/form/survey/put-survey-mapping",
+                  },
+                  {
+                    text: "GET - Récupérer un survey",
+                    link: "/form/survey/get-survey-one",
+                  },
+                  {
+                    text: "POST - Mettre à jour un servey",
+                    link: "/form/survey/put-survey-edit",
+                  },
+                ],
+              },
+              {
+                text: "Todo",
+                collapsed: true,
+                items: [
+                  {
+                    text: "POST - Valider une tache",
+                    link: "/form/todo/get-todo-validate",
+                  },
+                  {
+                    text: "GET - Récupérer la liste de todo par manager",
+                    link: "/form/todo/get-todo-manager",
+                  },
+                  {
+                    text: "GET - Récupérer la liste de todo par sujet",
+                    link: "/form/todo/get-todo-sujet",
+                  },
+                  {
+                    text: "POST - Créer ou modifier un todo",
+                    link: "/form/todo/post-todo",
+                  },
+                  {
+                    text: "GET - Annuler un todo",
+                    link: "/form/todo/get-todo-cancel",
+                  },
+                ],
+              },
+              {
+                text: "Uploader",
+                collapsed: true,
+                items: [
+                  {
+                    text: "POST - Upload un fichier",
+                    link: "/form/uploader/post-file",
+                  },
+                  {
+                    text: "POST - Créer un dossier",
+                    link: "/form/uploader/post-folder",
+                  },
+                  {
+                    text: "GET - Récupérer un fichier",
+                    link: "/form/uploader/get-file",
                   },
                 ],
               },

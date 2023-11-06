@@ -1,31 +1,31 @@
-### <span style="color:green">GET</span> Récupérer tous les partenaires selon un code
+### <span style="color:green">GET</span> Récupérer tous les managers disponibles
 
 ````
-BASE_URL/partner/user/list
+BASE_URL/service/{apiKey}/get/available/managers
 ````
 
-<br/> <br/> 
+<br/> <br/>
 
 # HEADERS
 
 | Authorization | Bearer TOKEN |
-| ------------- | ----------- |
+| ------------- | -----------  |
 
 <br/> <br/>
 
-# Récupération de tous les partenaires selon un code
-Ce guide vous aide à comprendre comment Récupérer tous les partenaires selon un code.
+# Récupération de tous les managers disponibles
+Ce guide vous aide à comprendre comment récupérer tous les managers disponibles.
 
 
 ## Informations envoyées dans la requête
 
-Lors de la récupération de tous les partenaires selon un code, les informations envoyées peuvent être les suivantes :
+Lors de la récupération de tous les managers disponibles, les informations envoyées peuvent être les suivantes :
 
 
 ## Exemple de Requête
 
 ```txt
-curl --location 'BASE_URL/partner/user/list' \'
+curl --location 'BASE_URL/service/{apiKey}/get/available/managers' \'
 
 ```
 
@@ -38,18 +38,17 @@ curl --location 'BASE_URL/partner/user/list' \'
 {
     {
         "status": "success",
-        "partenaires": [
+        "managers": [
             {
                 "id": "4114bdd2-f2ab-4d2a-aa6c-92b4d64c7986", 
                 "name": "DOE",
                 "code": "àç!§js",
                 "username": "doe225",
                 "email": "doe@mail.com",
-                "password": "àç!§js",
                 "contact": "0708090605",
                 "tenants": "TEST",
                 "crmId": "4114bdd2-f2ab-4d2a-aa6c-92b4d64c7986",
-                "roles": ["ROLE_ADMIN", "ROLE_USER"]
+                "roles": ["ROLE_MANAGER"]
             },
             {
                 "id": "4114bdd2-f2ab-4d2a-aa6c-92b4d64c7986", 
@@ -61,7 +60,7 @@ curl --location 'BASE_URL/partner/user/list' \'
                 "contact": "0708090605",
                 "tenants": "TEST",
                 "crmId": "4114bdd2-f2ab-4d2a-aa6c-92b4d64c7986",
-                "roles": ["ROLE_ADMIN", "ROLE_USER"]
+                "roles": ["ROLE_MANAGER"]
             },
             {
                 "id": "4114bdd2-f2ab-4d2a-aa6c-92b4d64c7986", 
@@ -69,11 +68,10 @@ curl --location 'BASE_URL/partner/user/list' \'
                 "code": "àç!§js",
                 "username": "doe225",
                 "email": "doe@mail.com",
-                "password": "àç!§js",
                 "contact": "0708090605",
                 "tenants": "TEST",
                 "crmId": "4114bdd2-f2ab-4d2a-aa6c-92b4d64c7986",
-                "roles": ["ROLE_ADMIN", "ROLE_USER"]
+                "roles": ["ROLE_MANAGER"]
             }
         ]
     },

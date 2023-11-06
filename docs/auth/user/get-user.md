@@ -1,31 +1,31 @@
-### <span style="color:green">GET</span> Récupérer tous les partenaires selon un code
+### <span style="color:green">GET</span> Récupérer la liste des utilisateurs
 
 ````
-BASE_URL/partner/user/list
+BASE_URL/user/list/
 ````
 
-<br/> <br/> 
+<br/> <br/>
 
 # HEADERS
 
 | Authorization | Bearer TOKEN |
-| ------------- | ----------- |
+| ------------- | -----------  |
 
 <br/> <br/>
 
-# Récupération de tous les partenaires selon un code
-Ce guide vous aide à comprendre comment Récupérer tous les partenaires selon un code.
+# Récupération de la liste des utilisateurs
+Ce guide vous aide à comprendre comment récupérer la liste des utilisateurs.
 
 
 ## Informations envoyées dans la requête
 
-Lors de la récupération de tous les partenaires selon un code, les informations envoyées peuvent être les suivantes :
+Lors de la récupération de la liste des utilisateurs, les informations envoyées peuvent être les suivantes :
 
 
 ## Exemple de Requête
 
 ```txt
-curl --location 'BASE_URL/partner/user/list' \'
+curl --location 'BASE_URL/user/list/' \'
 
 ```
 
@@ -38,14 +38,13 @@ curl --location 'BASE_URL/partner/user/list' \'
 {
     {
         "status": "success",
-        "partenaires": [
-            {
+        "users": [
+{
                 "id": "4114bdd2-f2ab-4d2a-aa6c-92b4d64c7986", 
                 "name": "DOE",
                 "code": "àç!§js",
                 "username": "doe225",
                 "email": "doe@mail.com",
-                "password": "àç!§js",
                 "contact": "0708090605",
                 "tenants": "TEST",
                 "crmId": "4114bdd2-f2ab-4d2a-aa6c-92b4d64c7986",
@@ -57,7 +56,6 @@ curl --location 'BASE_URL/partner/user/list' \'
                 "code": "àç!§js",
                 "username": "doe225",
                 "email": "doe@mail.com",
-                "password": "àç!§js",
                 "contact": "0708090605",
                 "tenants": "TEST",
                 "crmId": "4114bdd2-f2ab-4d2a-aa6c-92b4d64c7986",
@@ -69,23 +67,15 @@ curl --location 'BASE_URL/partner/user/list' \'
                 "code": "àç!§js",
                 "username": "doe225",
                 "email": "doe@mail.com",
-                "password": "àç!§js",
                 "contact": "0708090605",
                 "tenants": "TEST",
                 "crmId": "4114bdd2-f2ab-4d2a-aa6c-92b4d64c7986",
                 "roles": ["ROLE_ADMIN", "ROLE_USER"]
             }
-        ]
+            ]
     },
     200,
     {},
-    {
-        "groups": {
-            "0":"user", 
-            "1":"infos",
-            "2":"photo"
-            }
-    }
 }
 ```
 :::
